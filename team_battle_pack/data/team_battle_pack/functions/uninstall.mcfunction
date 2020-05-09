@@ -3,9 +3,9 @@
 
 ## Remove necessary scoreboard objectives
 # Scoreboard value to keep track of time (in ticks)
-scoreboard objectives remove ks5_tbp_time
+scoreboard objectives remove tbp_timer
 # Scoreboard value to keep track of maximum time (in ticks)
-scoreboard objectives remove ks5_tbp_schedule
+scoreboard objectives remove tbp_schedule
 
 ## Signal that the pack was uninstalled
-data remove storage ks5_tbp installed
+data remove storage team_battle_pack installed

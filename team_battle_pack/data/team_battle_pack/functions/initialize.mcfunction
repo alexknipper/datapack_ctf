@@ -3,15 +3,15 @@
 
 ## Create necessary scoreboard objectives
 # Scoreboard value to keep track of time (in ticks)
-scoreboard objectives add ks5_tbp_time dummy
+scoreboard objectives add tbp_timer dummy
 # Scoreboard value to keep track of maximum time (in ticks)
-scoreboard objectives add ks5_tbp_schedule dummy
+scoreboard objectives add tbp_schedule dummy
 
 ## Create necessary durations for each functionality
 # Activation interval for special effects
-scoreboard players set sfx ks5_tbp_schedule 2
+scoreboard players set sfx tbp_schedule 2
 # Activation interval for nexus modifications
-scoreboard players set nexus ks5_tbp_schedule 5
+scoreboard players set nexus tbp_schedule 5
 
 ## Create storage for the pack, and signal that the pack is installed
-data modify storage ks5_tbp installed set value 1
+data modify storage team_battle_pack installed set value 1
