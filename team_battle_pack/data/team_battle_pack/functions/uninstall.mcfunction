@@ -43,6 +43,8 @@ scoreboard objectives remove tbp_white_use
 scoreboard objectives remove tbp_lgray_use
 scoreboard objectives remove tbp_gray_use
 scoreboard objectives remove tbp_black_use
+# Scoreboard value to keep track of dropped papers (nexus coloring)
+#scoreboard objectives remove tbp_paper_use
 
 
 

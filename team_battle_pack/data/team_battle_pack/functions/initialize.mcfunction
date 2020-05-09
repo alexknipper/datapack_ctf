@@ -12,7 +12,7 @@ scoreboard objectives add tbp_team dummy
 scoreboard objectives add tbp_glowdust_use minecraft.dropped:minecraft.glowstone_dust
 # Scoreboard value to keep track of dropped name tags (nexus renaming)
 scoreboard objectives add tbp_nametag_use minecraft.dropped:minecraft.name_tag
-# Scoreboard Value to keep track of dropped dyes (nexus dyeing)
+# Scoreboard value to keep track of dropped dyes (nexus coloring)
 scoreboard objectives add tbp_red_use minecraft.dropped:minecraft.red_dye
 scoreboard objectives add tbp_orange_use minecraft.dropped:minecraft.orange_dye
 scoreboard objectives add tbp_yellow_use minecraft.dropped:minecraft.yellow_dye
@@ -27,6 +27,8 @@ scoreboard objectives add tbp_white_use minecraft.dropped:minecraft.white_dye
 scoreboard objectives add tbp_lgray_use minecraft.dropped:minecraft.light_gray_dye
 scoreboard objectives add tbp_gray_use minecraft.dropped:minecraft.gray_dye
 scoreboard objectives add tbp_black_use minecraft.dropped:minecraft.black_dye
+# Scoreboard value to keep track of dropped papers (nexus coloring)
+#scoreboard objectives add tbp_paper_use minecraft.dropped:minecraft.paper
 
 
 
@@ -35,10 +37,6 @@ scoreboard objectives add tbp_black_use minecraft.dropped:minecraft.black_dye
 scoreboard players set sfx tbp_schedule 2
 # Activation interval for the nexus scheduler
 scoreboard players set nexus tbp_schedule 5
-
-## Create schedules for each timer (Nexus Scheduler)
-# Activation interval for nexus creation
-scoreboard players set nexus_create tbp_schedule 2
 
 
 
