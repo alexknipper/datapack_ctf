@@ -5,13 +5,13 @@
 execute at @s run summon minecraft:item_frame ~ ~1 ~
 
 ## Summon the armor stand
-execute at @s at @e[type=minecraft:item_frame,distance=1..2,limit=1,sort=nearest] run summon minecraft:armor_stand ~ ~-2.5 ~ {CustomName:"{\"text\":\"Cores Captured: 0\"}",Invisible:1b,NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,Tags:["capture_indicator"]}
+execute at @s at @e[type=minecraft:item_frame,distance=1..2,limit=1,sort=nearest] run summon minecraft:armor_stand ~ ~-2.25 ~ {CustomName:"{\"text\":\"Cores Captured: 0\"}",Invisible:1b,NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,Tags:["capture_indicator"]}
 
 ## Kill the item frame
 execute at @s run kill @e[type=minecraft:item_frame,distance=1..2,limit=1,sort=nearest]
 
 ## Spawn the end crystal
-execute at @s at @e[type=minecraft:armor_stand,distance=..3,tag=capture_indicator,limit=1,sort=nearest] run summon minecraft:end_crystal ~ ~.5 ~ {ShowBottom:0b,Invulnerable:1b,CustomNameVisible:1b,CustomName:"{\"text\":\"Unnamed Nexus\"}",Tags:["nexus"]}
+execute at @s at @e[type=minecraft:armor_stand,distance=..2.5,tag=capture_indicator,limit=1,sort=nearest] run summon minecraft:end_crystal ~ ~.25 ~ {ShowBottom:0b,Invulnerable:1b,CustomNameVisible:1b,CustomName:"{\"text\":\"Unnamed Nexus\"}",Tags:["nexus"]}
 
 ## SFX
 execute at @s at @e[type=minecraft:end_crystal,distance=..2,tag=nexus,limit=1,sort=nearest] run summon minecraft:area_effect_cloud ~ ~.25 ~ {Particle:"cloud",ReapplicaitonDelay:20,Radius:2f,RadiusPerTick:-0.002f,RadiusOnUse:0.5f,Duration:50,DurationOnUse:0.0f}
