@@ -28,5 +28,8 @@ execute at @s as @e[type=minecraft:end_crystal,distance=..2,tag=nexus,limit=1,so
 execute at @s run scoreboard players operation @a[distance=..5] tbp_team = next_team tbp_team
 scoreboard players add next_team tbp_team 1
 
+## Reset all players' glowdust usage scores
+execute at @s as @a[scores={tbp_glowdust_use=1..},distance=..50] run scoreboard players reset @s tbp_glowdust_use
+
 ## Kill the item that called this function
 kill @s
