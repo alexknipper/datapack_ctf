@@ -7,6 +7,7 @@ execute as @a[scores={tbp_glowdust_use=1..}] at @s unless entity @e[type=minecra
 
 
 ## Nexus Destruction
+execute as @e[type=minecraft:end_crystal,tag=nexus] run function team_battle_pack:nexus/destroy
 
 
 
