@@ -14,7 +14,7 @@ execute at @s run kill @e[type=minecraft:item_frame,distance=1..2,limit=1,sort=n
 execute at @s at @e[type=minecraft:armor_stand,distance=..2,tag=capture_indicator,limit=1,sort=nearest] run summon minecraft:end_crystal ~ ~ ~ {ShowBottom:0b,Invulnerable:1b,CustomNameVisible:1b,CustomName:"{\"text\":\"Unnamed Nexus\"}",Tags:["nexus"]}
 
 ## SFX
-execute at @s at @e[type=minecraft:end_crystal,distance=..2,tag=nexus,limit=1,sort=nearest] run summmon minecraft:area_effect_cloud ~ ~.25 ~ {Particle:"cloud",ReapplicaitonDelay:20,Radius:2f,RadiusPerTick:-0.002f,RadiusOnUse:0.5f,Duration:50,DurationOnUse:0.0f}
+execute at @s at @e[type=minecraft:end_crystal,distance=..2,tag=nexus,limit=1,sort=nearest] run summon minecraft:area_effect_cloud ~ ~.25 ~ {Particle:"cloud",ReapplicaitonDelay:20,Radius:2f,RadiusPerTick:-0.002f,RadiusOnUse:0.5f,Duration:50,DurationOnUse:0.0f}
 execute at @s run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 100 1.5 1
 
 ## Announce the nexus' creation to chat
