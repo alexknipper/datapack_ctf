@@ -24,6 +24,8 @@ scoreboard objectives remove tbp_timer
 scoreboard objectives remove tbp_schedule
 # Scoreboard value to keep track of teams
 scoreboard objectives remove tbp_team
+# Scoreboard value to keep track of captured flags
+scoreboard objectives remove tbp_core_total
 # Scoreboard value to keep track of dropped glowstone dust (nexus creation)
 scoreboard objectives remove tbp_glowdust_use
 # Scoreboard value to keep track of dropped name tags (nexus renaming)
