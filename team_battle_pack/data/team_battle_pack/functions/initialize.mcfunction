@@ -29,6 +29,8 @@ scoreboard objectives add tbp_gray_use minecraft.dropped:minecraft.gray_dye
 scoreboard objectives add tbp_black_use minecraft.dropped:minecraft.black_dye
 # Scoreboard value to keep track of dropped papers (nexus coloring)
 #scoreboard objectives add tbp_paper_use minecraft.dropped:minecraft.paper
+# Scoreboard value to keep track of dropped gold nuggets (nexus attunement)
+scoreboard objectives add tbp_gnugget_use minecraft.dropped:minecraft.gold_nugget
 
 
 

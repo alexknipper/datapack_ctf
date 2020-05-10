@@ -45,6 +45,8 @@ scoreboard objectives remove tbp_gray_use
 scoreboard objectives remove tbp_black_use
 # Scoreboard value to keep track of dropped papers (nexus coloring)
 #scoreboard objectives remove tbp_paper_use
+# Scoreboard value to keep track of dropped gold nuggets (nexus attunement)
+scoreboard objectives remove tbp_gnugget_use
 
 
 
