@@ -16,5 +16,10 @@ execute at @s run playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 
 
 
 
+## Reset all players' red dye usage scores
+execute at @s as @a[scores={tbp_red_use=1..},distance=..100] run scoreboard players reset @s tbp_red_use
+
+
+
 ## Kill the item that called this function
 kill @s
