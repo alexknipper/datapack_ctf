@@ -51,7 +51,7 @@ execute as @a[scores={tbp_black_use=1..},tag=!core_holder] at @s if score @s tbp
 
 
 ## Nexus Attunement
-execute as @a[scores={tbp_gnugget_use=1..},tag=!core_holder] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] tbp_team as @e[type=item,nbt={Item:{id:"minecraft:gold_nugget"}},distance=..5,limit=1,sort=nearest] at @s if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run function team_battle_pack:nexus/attune
+execute as @a[scores={tbp_gnugget_use=1..},tag=!core_holder] at @s unless score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] tbp_team as @e[type=item,nbt={Item:{id:"minecraft:gold_nugget"}},distance=..5,limit=1,sort=nearest] at @s if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run function team_battle_pack:nexus/attune
 
 
 
