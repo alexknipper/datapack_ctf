@@ -20,6 +20,10 @@ execute as @a[scores={tbp_nametag_use=1..}] at @s as @e[type=item,nbt={Item:{id:
 
 
 
+## Nexus Attunement
+
+
+
 ## Nexus Theft
 
 
