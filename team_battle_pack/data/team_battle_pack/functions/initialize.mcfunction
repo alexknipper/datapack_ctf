@@ -25,6 +25,7 @@ scoreboard objectives add tbp_blue_use minecraft.dropped:minecraft.blue_dye
 scoreboard objectives add tbp_lblue_use minecraft.dropped:minecraft.light_blue_dye
 scoreboard objectives add tbp_purple_use minecraft.dropped:minecraft.purple_dye
 scoreboard objectives add tbp_magenta_use minecraft.dropped:minecraft.magenta_dye
+scoreboard objectives add tbp_pink_use minecraft.dropped:minecraft.pink_dye
 scoreboard objectives add tbp_white_use minecraft.dropped:minecraft.white_dye
 scoreboard objectives add tbp_lgray_use minecraft.dropped:minecraft.light_gray_dye
 scoreboard objectives add tbp_gray_use minecraft.dropped:minecraft.gray_dye

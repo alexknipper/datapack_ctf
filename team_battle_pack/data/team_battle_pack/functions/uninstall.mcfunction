@@ -41,6 +41,7 @@ scoreboard objectives remove tbp_blue_use
 scoreboard objectives remove tbp_lblue_use
 scoreboard objectives remove tbp_purple_use
 scoreboard objectives remove tbp_magenta_use
+scoreboard objectives remove tbp_pink_use
 scoreboard objectives remove tbp_white_use
 scoreboard objectives remove tbp_lgray_use
 scoreboard objectives remove tbp_gray_use
