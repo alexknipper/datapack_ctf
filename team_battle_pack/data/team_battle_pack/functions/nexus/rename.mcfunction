@@ -11,12 +11,18 @@ execute at @s run data modify block ~ 0 ~ Text1 set value '[{"nbt":"Item.tag.dis
 
 
 
-## //hi
+## Set the nexus' name to the sign's text
+execute at @s run data modify entity @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] CustomName set from block ~ 0 ~ Text1
 
 
 
 ## Change the sign back to bedrock
 execute at @s run setblock ~ 0 ~ minecraft:bedrock
+
+
+
+## Reset all name tag usage scores in a 50 block radius
+execute at @s run scoreboard players reset @a[distance=..50] tbp_nametag_use
 
 
 
