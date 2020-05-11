@@ -32,4 +32,4 @@ execute at @s run scoreboard players reset @a[distance=..50] tbp_nametag_use
 
 
 ## Kill the name tag that called the function
-kill @s
+##kill @s
