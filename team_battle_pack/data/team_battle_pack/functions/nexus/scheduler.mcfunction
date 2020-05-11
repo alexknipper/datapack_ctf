@@ -43,10 +43,12 @@ execute as @a[scores={tbp_pink_use=1..},tag=!core_holder] at @s if score @s tbp_
 execute as @a[scores={tbp_white_use=1..},tag=!core_holder] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] tbp_team as @e[type=item,nbt={Item:{id:"minecraft:white_dye"}},distance=..5,limit=1,sort=nearest] at @s if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run function team_battle_pack:nexus/color_white
 # Light Gray
 execute as @a[scores={tbp_lgray_use=1..},tag=!core_holder] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] tbp_team as @e[type=item,nbt={Item:{id:"minecraft:light_gray_dye"}},distance=..5,limit=1,sort=nearest] at @s if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run function team_battle_pack:nexus/color_lgray
-# Dark Gray
+# Gray
 execute as @a[scores={tbp_gray_use=1..},tag=!core_holder] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] tbp_team as @e[type=item,nbt={Item:{id:"minecraft:gray_dye"}},distance=..5,limit=1,sort=nearest] at @s if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run function team_battle_pack:nexus/color_gray
 # Black
 execute as @a[scores={tbp_black_use=1..},tag=!core_holder] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] tbp_team as @e[type=item,nbt={Item:{id:"minecraft:black_dye"}},distance=..5,limit=1,sort=nearest] at @s if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run function team_battle_pack:nexus/color_black
+# Brown
+execute as @a[scores={tbp_brown_use=1..},tag=!core_holder] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] tbp_team as @e[type=item,nbt={Item:{id:"minecraft:brown_dye"}},distance=..5,limit=1,sort=nearest] at @s if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run function team_battle_pack:nexus/color_brown
 
 
 
