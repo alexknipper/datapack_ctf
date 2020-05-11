@@ -27,7 +27,7 @@ execute at @s run setblock ~ 0 ~ minecraft:bedrock
 
 
 ## Reset all name tag usage scores in a 50 block radius
-execute at @s run scoreboard players reset @a[distance=..50] tbp_nametag_use
+execute at @s run scoreboard players reset @a[distance=..100] tbp_nametag_use
 
 
 

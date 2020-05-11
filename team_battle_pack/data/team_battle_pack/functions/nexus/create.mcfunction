@@ -29,7 +29,7 @@ execute at @s run scoreboard players operation @a[distance=..5] tbp_team = next_
 scoreboard players add next_team tbp_team 1
 
 ## Reset all players' glowdust usage scores
-execute at @s as @a[scores={tbp_glowdust_use=1..},distance=..50] run scoreboard players reset @s tbp_glowdust_use
+execute at @s as @a[scores={tbp_glowdust_use=1..},distance=..100] run scoreboard players reset @s tbp_glowdust_use
 
 ## Kill the item that called this function
 kill @s
