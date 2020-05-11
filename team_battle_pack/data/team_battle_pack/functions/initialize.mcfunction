@@ -10,6 +10,8 @@ scoreboard objectives add tbp_schedule dummy
 scoreboard objectives add tbp_team dummy
 # Scoreboard value to keep track of captured flags
 scoreboard objectives add tbp_core_total dummy
+# Scoreboard value to keep track of whether a flag has been stolen
+scoreboard objectives add tbp_core_missing dummy
 # Scoreboard value to keep track of dropped glowstone dust (nexus creation)
 scoreboard objectives add tbp_glowdust_use minecraft.dropped:minecraft.glowstone_dust
 # Scoreboard value to keep track of dropped name tags (nexus renaming)
