@@ -29,7 +29,7 @@ execute at @e[scores={tbp_color=12}] run particle minecraft:dust 1 1 1 1 ~ ~ ~ .
 # Light Gray
 execute at @e[scores={tbp_color=13}] run particle minecraft:dust .65 .65 .65 1 ~ ~ ~ .5 .5 .5 1 7 force
 # Gray
-execute at @e[scores={tbp_color=14}] run particle minecraft:dust .25 .25 .25 1 ~ ~ ~ .5 .5 .5 1 7 force
+execute at @e[scores={tbp_color=14}] run particle minecraft:dust .35 .35 .35 1 ~ ~ ~ .5 .5 .5 1 7 force
 # Black
 execute at @e[scores={tbp_color=15}] run particle minecraft:dust 0 0 0 1 ~ ~ ~ .5 .5 .5 1 7 force
 # Brown
