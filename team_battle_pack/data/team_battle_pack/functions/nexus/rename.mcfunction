@@ -21,6 +21,11 @@ execute at @s run data modify entity @e[type=minecraft:end_crystal,tag=nexus,dis
 
 
 
+## SFX
+execute at @s run playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 100 1.75 1
+
+
+
 ## Change the sign back to bedrock
 execute at @s run setblock ~ 0 ~ minecraft:bedrock
 
