@@ -5,10 +5,10 @@
 execute at @s run summon minecraft:item_frame ~ ~1 ~
 
 ## Summon the armor stand
-execute at @s at @e[type=minecraft:item_frame,distance=1..2,limit=1,sort=nearest] run summon minecraft:armor_stand ~ ~-2.25 ~ {CustomName:"{\"text\":\"Cores Captured: 0\"}",Invisible:1b,NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,Tags:["capture_indicator"]}
+execute at @s at @e[type=minecraft:item_frame,distance=1..3,limit=1,sort=nearest] run summon minecraft:armor_stand ~ ~-2.25 ~ {CustomName:"{\"text\":\"Cores Captured: 0\"}",Invisible:1b,NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,Tags:["capture_indicator"]}
 
 ## Kill the item frame
-execute at @s run kill @e[type=minecraft:item_frame,distance=1..2,limit=1,sort=nearest]
+execute at @s run kill @e[type=minecraft:item_frame,distance=1..3,limit=1,sort=nearest]
 
 ## Spawn the end crystal
 execute at @s at @e[type=minecraft:armor_stand,distance=..2.5,tag=capture_indicator,limit=1,sort=nearest] run summon minecraft:end_crystal ~ ~.25 ~ {ShowBottom:0b,Invulnerable:1b,CustomNameVisible:1b,CustomName:"{\"text\":\"Unnamed Nexus\"}",Tags:["nexus"]}
