@@ -24,6 +24,8 @@ scoreboard objectives remove tbp_timer
 scoreboard objectives remove tbp_schedule
 # Scoreboard value to keep track of teams
 scoreboard objectives remove tbp_team
+# Scoreboard value to keep track of item colors
+scoreboard objectives remove tbp_color
 # Scoreboard value to keep track of captured flags
 scoreboard objectives remove tbp_core_total
 # Scoreboard value to keep track of whether a flag has been stolen

@@ -8,6 +8,8 @@ scoreboard objectives add tbp_timer dummy
 scoreboard objectives add tbp_schedule dummy
 # Scoreboard value to keep track of teams
 scoreboard objectives add tbp_team dummy
+# Scoreboard value to keep track of item colors
+scoreboard objectives add tbp_color dummy
 # Scoreboard value to keep track of captured flags
 scoreboard objectives add tbp_core_total dummy
 # Scoreboard value to keep track of whether a flag has been stolen
