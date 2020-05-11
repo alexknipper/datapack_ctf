@@ -12,6 +12,7 @@ execute as @e[type=minecraft:end_crystal,tag=nexus] run function team_battle_pac
 
 
 ## Nexus Renaming
+execute as @a[scores={tbp_nametag_use=1..}] at @s as @e[type=item,nbt={Item:{id:"minecraft:name_tag"}},distance=..5,limit=1,sort=nearest] at @s if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run function team_battle_pack:nexus/rename
 
 
 
