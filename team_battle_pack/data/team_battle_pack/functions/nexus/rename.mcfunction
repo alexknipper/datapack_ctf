@@ -17,7 +17,7 @@ execute at @s run data modify entity @e[type=minecraft:end_crystal,tag=nexus,dis
 
 
 ## Change the sign back to bedrock
-execute at @s run setblock ~ 0 ~ minecraft:bedrock
+#execute at @s run setblock ~ 0 ~ minecraft:bedrock
 
 
 
