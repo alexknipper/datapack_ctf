@@ -7,7 +7,7 @@ execute at @s run setblock ~ 0 ~ minecraft:oak_sign
 
 
 ## Add the name to the first row of the sign
-execute at @s run data modify block ~ 0 ~ Text1 set value '[{"nbt":"Item.tag.display.Name","entity":"@s","interpret":true},{"text":" Nexus"}]'
+execute at @s run data modify block ~ 0 ~ Text1 set value '[{"nbt":"Item.tag.display.Name","entity":"@e[type=minecraft:name_tag,distance=..1,limit=1,sort=nearest]","interpret":true},{"text":" Nexus"}]'
 
 
 
