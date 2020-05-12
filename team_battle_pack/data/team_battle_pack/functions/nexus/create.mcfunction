@@ -24,8 +24,10 @@ execute at @s run tellraw @a [{"selector":"@p"},{"text":" has created a new Nexu
 #execute at @s run advancement grant @a[distance=..5] only team_battle_pack:
 
 ## Add the nexus and player to the appropriate team, and increment the team scoreboard
+# Add entities to team
 execute at @s as @e[type=minecraft:end_crystal,distance=..2,tag=nexus,limit=1,sort=nearest] run scoreboard players operation @s tbp_team = next_team tbp_team
 execute at @s run scoreboard players operation @a[distance=..5] tbp_team = next_team tbp_team
+# Increment the team scoreboard
 scoreboard players add next_team tbp_team 1
 
 ## Reset all players' glowdust usage scores
