@@ -22,7 +22,7 @@ execute at @s run data modify entity @e[type=minecraft:end_crystal,tag=nexus,dis
 
 
 ## SFX
-execute at @s run playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 100 1.75 1
+execute at @s run playsound minecraft:block.beacon.power_select master @a[distance=..100] ~ ~ ~ 100 1.75 1
 
 
 
