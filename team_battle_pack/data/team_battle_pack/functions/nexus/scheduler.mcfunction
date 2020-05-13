@@ -77,6 +77,6 @@ execute as @a[tag=core_holder,tag=captured_flag] run function team_battle_pack:n
 # Primarily, rotate the global list if a core_returner is present
 execute positioned ~ -2 ~ as @e[type=minecraft:armor_stand,tag=core_returner,distance=..1,limit=1] run function team_battle_pack:nexus/rotate_core_list
 # Alternatively, rotate the global list if a 'theft_indicator' is currently loaded
-execute positioned ~ -2 ~ unless @e[type=minecraft:armor_stand,tag=core_returner,limit=1] as @e[type=armor_stand,tag=theft_indicator,limit=1] run function team_battle_pack:nexus/rotate_core_list
+execute positioned ~ -2 ~ unless entity @e[type=minecraft:armor_stand,tag=core_returner,limit=1] as @e[type=armor_stand,tag=theft_indicator,limit=1] run function team_battle_pack:nexus/rotate_core_list
 # As a core_returner, attempt to delete the appropriate item from the list
 execute positioned ~ -2 ~ as @e[type=minecraft:armor_stand,tag=core_returner,distance=..1] run function team_battle_pack:nexus/remove_core_list
