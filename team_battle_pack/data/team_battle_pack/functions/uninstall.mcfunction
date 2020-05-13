@@ -34,6 +34,10 @@ scoreboard objectives remove tbp_core_total
 scoreboard objectives remove tbp_core_removed
 # Scoreboard value to keep track of global total number of missing cores
 scoreboard objectives remove tbp_num_removed
+# Scoreboard value to keep track of previous number of missing cores
+scoreboard objectives remove tbp_prev_removed
+# Scoreboard value to keep track of total number of list rotations
+scoreboard objectives remove tbp_num_rotated
 # Scoreboard value to keep track of core holder deaths
 scoreboard objectives remove tbp_holder_death
 # Scoreboard value to keep track of dropped glowstone dust (nexus creation)
