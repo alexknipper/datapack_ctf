@@ -10,6 +10,6 @@ execute store result score @s tbp_core_removed run data get storage team_battle_
 # Remove the 0th element (If applicable)
 execute if score @s tbp_team = @s tbp_core_removed run data remove storage team_battle_pack missing_core[0]
 # Decrement the global removed core counter
-scoreboard players remove total_removed_cores tbp_num_removed 1
+execute if score @s tbp_team = @s tbp_core_removed run scoreboard players remove total_removed_cores tbp_num_removed 1
 # Kill the executing armor stand (If applicable)
 execute if score @s tbp_team = @s tbp_core_removed run kill @s
