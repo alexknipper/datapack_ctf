@@ -21,6 +21,11 @@ scoreboard players reset @s tbp_core_removed
 
 
 
+## Tellraw if the player dropped the flag
+execute as @s[scores={tbp_holder_death=1..}] run tellraw @a ["",{"selector":"@s"},{"text":" has lost a "},{"text":"core","color":"gold"},{"text":"!"}]
+
+
+
 ## Reset the execution conditions of this function
 # Reset the executing player's death count (If applicable)
 execute as @s[scores={tbp_holder_death=1..}] run scoreboard players reset @s tbp_holder_death
