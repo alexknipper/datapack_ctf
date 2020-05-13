@@ -15,7 +15,9 @@ scoreboard objectives add tbp_core_total dummy
 # Scoreboard value to keep track of whether a flag has been stolen
 scoreboard objectives add tbp_core_removed dummy
 # Scoreboard value to keep track of global total number of missing cores
-scoreboard objectives add tbp_num_missing dummy
+scoreboard objectives add tbp_num_removed dummy
+# Scoreboard value to keep track of core holder deaths
+scoreboard objectives add tbp_holder_death deathCount
 # Scoreboard value to keep track of dropped glowstone dust (nexus creation)
 scoreboard objectives add tbp_glowdust_use minecraft.dropped:minecraft.glowstone_dust
 # Scoreboard value to keep track of dropped name tags (nexus renaming)
@@ -55,7 +57,7 @@ scoreboard players set nexus tbp_schedule 5
 ## Create handler for team IDs
 scoreboard players set next_team tbp_team 1
 ## Create handler for total number of cores
-scoreboard players set total_removed_cores tbp_num_missing 0
+scoreboard players set total_removed_cores tbp_num_removed 0
 
 
 

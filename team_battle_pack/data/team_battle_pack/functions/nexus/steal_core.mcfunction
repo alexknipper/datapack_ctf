@@ -18,7 +18,7 @@ execute at @s as @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] s
 
 
 ## Increment the global removed core counter
-scoreboard players add total_removed_cores tbp_num_missing 1
+scoreboard players add total_removed_cores tbp_num_removed 1
 
 
 
