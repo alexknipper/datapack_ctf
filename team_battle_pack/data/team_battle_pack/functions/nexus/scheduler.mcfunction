@@ -75,3 +75,4 @@ execute as @a[tag=core_holder,tag=captured_flag] run function team_battle_pack:n
 
 ## Nexus Unlocking
 function team_battle_pack:nexus/rotate_core_list
+execute positioned ~ -2 ~ as @e[tag=core_returner,distance=..1] run function team_battle_pack:nexus/remove_core_list
