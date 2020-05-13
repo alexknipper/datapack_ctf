@@ -58,7 +58,7 @@ execute as @a[scores={tbp_gnugget_use=1..},tag=!core_holder] at @s unless entity
 
 
 ## Nexus Theft
-execute as @a[tag=!core_holder] at @s as @e[type=minecraft:end_crystal,tag=nexus,distance=..2,limit=1] at @s unless entity @e[type=minecraft:armor_stand,tag=theft_indicator,distance=..1,limit=1] as @p[distance=..2] unless score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..2,limit=1] tbp_team run function team_battle_pack:nexus/steal_core
+execute as @a[tag=!core_holder,scores={tbp_team=1..}] at @s as @e[type=minecraft:end_crystal,tag=nexus,distance=..2,limit=1] at @s unless entity @e[type=minecraft:armor_stand,tag=theft_indicator,distance=..1,limit=1] as @p[distance=..2] unless score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..2,limit=1] tbp_team run function team_battle_pack:nexus/steal_core
 
 
 
