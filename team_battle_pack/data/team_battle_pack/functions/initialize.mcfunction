@@ -54,6 +54,8 @@ scoreboard players set nexus tbp_schedule 5
 
 ## Create handler for team IDs
 scoreboard players set next_team tbp_team 1
+## Create handler for total number of cores
+scoreboard players set total_removed_cores tbp_num_missing 0
 
 
 
