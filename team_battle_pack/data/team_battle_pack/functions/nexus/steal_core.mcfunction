@@ -6,8 +6,8 @@ execute at @s as @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] a
 
 
 
-## Tag the nexus with a 'core_missing' score of 1 (This step may be optional)
-execute at @s as @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] run scoreboard players set @s tbp_core_missing 1
+## Tag the theft_indicator with a 'core_missing' score of 1
+execute at @s as @e[type=minecraft:armor_stand,tag=theft_indicator,distance=..5,limit=1] run scoreboard players set @s tbp_core_removed 1
 
 
 
