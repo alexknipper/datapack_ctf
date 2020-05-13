@@ -69,6 +69,7 @@ execute as @a[tag=core_holder,scores={tbp_holder_death=1..}] run function team_b
 
 ## Nexus Captures
 execute as @a[tag=core_holder] at @s if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..2,limit=1] unless entity @e[type=minecraft:armor_stand,tag=theft_indicator,distance=..3,limit=1] if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..2,limit=1] tbp_team run function team_battle_pack:nexus/capture_core
+execute as @a[tag=core_holder,tag=captured_flag] run function team_battle_pack:nexus/return_core
 
 
 
