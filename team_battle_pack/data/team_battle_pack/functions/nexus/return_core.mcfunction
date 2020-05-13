@@ -3,7 +3,7 @@
 
 ## Spawn an armor stand at spawn to remove the team from global storage
 # Spawn the armor stand
-summon armor_stand ~ -2 ~ {Invisible:1b,NoGravity:1b,Invulnerable:1b,Tags:["core_returner,new"]}
+summon armor_stand ~ -2 ~ {Invisible:1b,NoGravity:1b,Invulnerable:1b,Tags:["core_returner","new"]}
 # Replicate the team score from the executing player to the armor stand
 scoreboard players operation @e[type=minecraft:armor_stand,tag=core_returner,tag=new,limit=1] tbp_team = @s tbp_core_removed
 # Remove the 'new' tag
