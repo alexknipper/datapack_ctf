@@ -63,5 +63,6 @@ scoreboard objectives remove tbp_gnugget_use
 
 
 ## Signal that the pack was uninstalled
+data remove storage team_battle_pack missing_core
 data remove storage team_battle_pack installed
 tellraw @a ["",{"text":"The "},{"text":"Team Battle Pack","color":"gold"},{"text":" has been successfully "},{"text":"uninstalled","color":"red"}]
