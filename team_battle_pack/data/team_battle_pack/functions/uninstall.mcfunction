@@ -11,7 +11,7 @@ scoreboard players reset nexus tbp_schedule
 # Team Players
 scoreboard players reset next_team tbp_team
 # Core Counter Players
-scoreboard players reset total_removed_cores tbp_num_missing
+scoreboard players reset total_removed_cores tbp_num_removed
 # Nexus Timer Players
 scoreboard players reset nexus_create tbp_timer
 # Nexus Schedule Players
