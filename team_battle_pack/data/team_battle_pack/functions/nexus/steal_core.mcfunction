@@ -13,7 +13,7 @@ execute at @s as @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] r
 
 ## Add the team number to the global storage
 data modify storage team_battle_pack missing_core append value {team:0}
-execute at @s as @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] store result storage team_battle_pack nexus[{team:0}].team int 1 run scoreboard players get @s tbp_team
+execute at @s as @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] store result storage team_battle_pack missing_core[{team:0}].team int 1 run scoreboard players get @s tbp_team
 
 
 
