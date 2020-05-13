@@ -12,7 +12,9 @@ execute at @s run kill @e[type=minecraft:armor_stand,distance=..1]
 
 
 ## Remove the flag from the flag carrier, if there is one
-execute at @s as @a[tag=core_holder] if score @s tbp_core_removed = @e[type=minecraft:end_crystal,distance=..1,tag=nexus,tag=destroy_nexus,limit=1] tbp_team run function team_battle_pack:nexus/return_core
+execute at @s as @a[tag=core_holder] if score @s tbp_core_removed = @e[type=minecraft:end_crystal,distance=..1,tag=nexus,tag=destroy_nexus,limit=1] tbp_team run tag @s add nexus_destroyed
+execute as @a[tag=core_holder,tag=nexus_destroyed] run function team_battle_pack:nexus/return_core
+tag @a[tag=nexus_destroyed] remove nexus_destroyed
 
 
 
