@@ -13,7 +13,7 @@ execute at @s as @e[type=minecraft:end_crystal,tag=nexus,distance=..3,limit=1] a
 
 ## SFX
 execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..3,limit=1] run playsound minecraft:block.portal.travel block @a[distance=..100] ~ ~ ~ 100 2 1
-execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..3,limit=1] run particle minecraft:instant_effect ~ ~ ~ 1 1 1 .01 50 force
+execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..3,limit=1] run particle minecraft:instant_effect ~ ~ ~ 1 1 1 .01 75 force
 
 
 

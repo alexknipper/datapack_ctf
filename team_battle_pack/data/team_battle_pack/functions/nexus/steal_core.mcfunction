@@ -26,7 +26,7 @@ scoreboard players add total_removed_cores tbp_num_removed 1
 
 
 ## SFX
-execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] run particle minecraft:witch ~ ~ ~ 1 1 1 .01 50 force
+execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] run particle minecraft:witch ~ ~ ~ 1 1 1 .01 75 force
 execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] run playsound minecraft:entity.wither.spawn block @a[distance=..100] ~ ~ ~ 100 1.5 1
 
 
