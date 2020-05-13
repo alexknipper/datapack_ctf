@@ -11,9 +11,12 @@ execute at @s as @e[type=minecraft:armor_stand,tag=theft_indicator,distance=..5,
 
 
 
-## Add the team number to the global storage
+## Add the team number to the global storage and  the theft_indicator
+# Add to global storage
 data modify storage team_battle_pack missing_core append value {team:0}
 execute at @s as @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] store result storage team_battle_pack missing_core[{team:0}].team int 1 run scoreboard players get @s tbp_team
+# Add to theft_indicator
+execute at @s as @e[type=minecraft:armor_stand,tag=theft_indicator,distance=..5,limit=1] run scoreboard players operation @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] tbp_team
 
 
 
