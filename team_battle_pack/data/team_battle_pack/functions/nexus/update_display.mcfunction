@@ -7,7 +7,7 @@ execute at @s run setblock ~ 0 ~ minecraft:oak_sign
 
 
 ## Store the resultant text in 'Text2' of the sign
-execute at @s run data modify block ~ 0 ~ Text2 set value '[{"text":"Cores Captured: 0"},{"score":{"name":"@s","objective":"tbp_core_total"}}]'
+execute at @s run data modify block ~ 0 ~ Text2 set value '[{"text":"Cores Captured: "},{"score":{"name":"@e[type=minecraft:end_crystal,tag=nexus,limit=1,sort=nearest]","objective":"tbp_core_total"}}]'
 
 
 
@@ -17,7 +17,7 @@ execute at @s run kill @e[type=minecraft:armor_stand,tag=capture_indicator,dista
 
 
 ## Summon a new capture_indicator
-execute at @s run summon minecraft:armor_stand ~ ~-.25 ~ {CustomName:"{\"text\":\"Cores Captured: \"}",Invisible:1b,NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,Tags:["capture_indicator"]}
+execute at @s run summon minecraft:armor_stand ~ ~-.25 ~ {CustomName:"{\"text\":\"Cores Captured: 0\"}",Invisible:1b,NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,Tags:["capture_indicator"]}
 
 
 
@@ -27,4 +27,4 @@ execute at @s run data modify entity @e[type=minecraft:armor_stand,tag=capture_i
 
 
 ## Replace the sign with bedrock
-#execute at @s run setblock ~ 0 ~ minecraft:bedrock
+execute at @s run setblock ~ 0 ~ minecraft:bedrock
