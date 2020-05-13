@@ -34,3 +34,8 @@ execute at @e[scores={tbp_color=14}] run particle minecraft:dust .35 .35 .35 1 ~
 execute at @e[scores={tbp_color=15}] run particle minecraft:dust 0 0 0 1 ~ ~ ~ .5 .5 .5 1 7 force
 # Brown
 execute at @e[scores={tbp_color=16}] run particle minecraft:dust .35 .2 0 1 ~ ~ ~ .5 .5 .5 1 7 force
+
+
+
+## Core Holder SFX
+execute at @a[tag=core_holder] run particle minecraft:witch ~ ~2.25 ~ .05 .15 .05 .01 3 force
