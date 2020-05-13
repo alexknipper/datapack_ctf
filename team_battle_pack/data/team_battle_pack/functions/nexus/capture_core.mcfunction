@@ -18,7 +18,10 @@ execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..3,limit=1] r
 
 
 ## Announce the capture to chat
-execute at @s run tellraw @a ["",{"selector":"@p"},{"text":" has "},{"text":"captured","color":"green"},{"text":" another nexus' "},{"text":"core","color":"gold"},{"text":"!\n"},{"nbt":"CustomName","entity":"@e[type=minecraft:end_crystal,tag=nexus,limit=1,sort=nearest]","interpret":true},{"text":" now has "},{"score":{"name":"@e[type=minecraft:end_crystal,tag=nexus,limit=1,sort=nearest]","objective":"tbp_core_total"}},{"text":" cores","color":"gold"},{"text":"!"}]
+# Score of 1
+execute at @s if score @e[type=minecraft:end_crystal,tag=nexus,distance=..3,limit=1] tbp_core_total matches 1 run tellraw @a ["",{"selector":"@p"},{"text":" has "},{"text":"captured","color":"green"},{"text":" another nexus' "},{"text":"core","color":"gold"},{"text":"!\n"},{"nbt":"CustomName","entity":"@e[type=minecraft:end_crystal,tag=nexus,limit=1,sort=nearest]","interpret":true},{"text":" now has "},{"score":{"name":"@e[type=minecraft:end_crystal,tag=nexus,limit=1,sort=nearest]","objective":"tbp_core_total"}},{"text":" cores","color":"gold"},{"text":"!"}]
+# Score greater than 1
+execute at @s unless score @e[type=minecraft:end_crystal,tag=nexus,distance=..3,limit=1] tbp_core_total matches 1 run tellraw @a ["",{"selector":"@p"},{"text":" has "},{"text":"captured","color":"green"},{"text":" another nexus' "},{"text":"core","color":"gold"},{"text":"!\n"},{"nbt":"CustomName","entity":"@e[type=minecraft:end_crystal,tag=nexus,limit=1,sort=nearest]","interpret":true},{"text":" now has "},{"score":{"name":"@e[type=minecraft:end_crystal,tag=nexus,limit=1,sort=nearest]","objective":"tbp_core_total"}},{"text":" cores","color":"gold"},{"text":"!"}]
 
 
 
