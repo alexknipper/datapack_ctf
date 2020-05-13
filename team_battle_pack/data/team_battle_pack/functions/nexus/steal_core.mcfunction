@@ -23,8 +23,13 @@ scoreboard players add total_removed_cores tbp_core_removed 1
 
 
 ## SFX
-execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] run
-execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] run
+execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] run particle minecraft:witch ~ ~ ~ 1 1 1 .01 50 force
+execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] run playsound minecraft:entity.wither.spawn block @a[distance=..100] ~ ~ ~ 100 1.5 1
+
+
+
+## Announce the theft to chat
+execute at @s run tellraw @a ["",{"nbt":"CustomName","entity":"@e[type=end_crystal,tag=nexus,distance=..5,limit=1]","interpret":true},{"text":"' "},{"text":"core","color":"gold"},{"text":" was "},{"text":"taken","color":"red"},{"text":" by "},{"selector":"@s"},{"text":"!"}]
 
 
 
