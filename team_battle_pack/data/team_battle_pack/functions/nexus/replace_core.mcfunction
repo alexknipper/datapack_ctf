@@ -25,7 +25,7 @@ execute unless score @s tbp_prev_removed = @s tbp_num_removed run scoreboard pla
 # Kill it if the global stolen core counter is now 0
 execute if score total_removed_cores tbp_num_removed matches 0 run kill @s
 # Kill it if its 'tbp_num_rotated' score equals the total_removed_cores value, and its 'tbp_core_removed' score is NOT 2
-execute unless entity @s[scores={tbp_core_removed=2}] if score total_removed_cores tbp_num_removed = @s tbp_num_rotated run kill @s
+execute unless entity @s[scores={tbp_core_removed=2}] if score total_removed_cores tbp_num_removed < @s tbp_num_rotated run kill @s
 
 
 
