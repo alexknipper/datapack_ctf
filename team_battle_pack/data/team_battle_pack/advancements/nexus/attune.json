@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:gold_nugget"
+        },
+        "title": {"text":"Nexus Attunement"},
+        "description": {"text":"Throw a gold nugget into the Nexus to attune to it."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:nexus",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
