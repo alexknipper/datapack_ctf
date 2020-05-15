@@ -4,7 +4,7 @@
             "item": "minecraft:nether_star"
         },
         "title": {"text":"Team Battle, Start!"},
-        "description": {"text":"Build your base, and get ready to defend your Nexus in this CTF experience!"},
+        "description": {"text":"Get ready to defend your Nexus in this CTF experience!"},
         "background": "minecraft:textures/gui/advancements/backgrounds/nether.png"
     },
     "criteria": {
