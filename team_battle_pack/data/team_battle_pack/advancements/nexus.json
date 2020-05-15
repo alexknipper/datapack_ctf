@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:end_crystal"
+        },
+        "title": {"text":"The Team Nexus"},
+        "description": {"text":"Construct a Team Nexus by placing an End Rod onto a Smooth Stone block, and throw some glowstone dust onto it."},
+		"hidden":true
+    },
+	"parent": "team_battle_pack:root",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "impossible"
+        }
+    }
+}
