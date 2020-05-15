@@ -10,7 +10,7 @@
 	"parent": "team_battle_pack:root",
     "criteria": {
         "nexus_made": {
-            "trigger": "impossible"
+            "trigger": "minecraft:impossible"
         }
     }
 }
