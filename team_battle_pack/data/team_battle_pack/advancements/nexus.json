@@ -5,7 +5,7 @@
         },
         "title": {"text":"The Team Nexus"},
         "description": {"text":"Construct a Team Nexus by placing an End Rod onto a Smooth Stone block, and throw some glowstone dust onto it."},
-		"hidden":true
+		"hidden":false
     },
 	"parent": "team_battle_pack:root",
     "criteria": {
