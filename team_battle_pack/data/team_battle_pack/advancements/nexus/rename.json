@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:name_tag"
+        },
+        "title": {"text":"Nexus Renaming"},
+        "description": {"text":"Throw a renamed name tag into the Nexus to rename it."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:nexus",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

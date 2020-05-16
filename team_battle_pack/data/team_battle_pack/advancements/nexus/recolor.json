@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:red_dye"
+        },
+        "title": {"text":"Nexus Coloring"},
+        "description": {"text":"Throw some dye into the Nexus to change its color."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:nexus",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
