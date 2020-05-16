@@ -5,7 +5,7 @@
         },
         "title": {"text":"Team Battle, Start!"},
         "description": {"text":"Get ready to defend your Nexus in this CTF experience!"},
-        "background": "minecraft:textures/gui/advancements/backgrounds/nether.png"
+        "background": "minecraft:textures/blocks/nether_bricks.png"
     },
     "criteria": {
         "instant": {
