@@ -12,7 +12,7 @@ execute at @s run playsound minecraft:block.bell.resonate master @a[distance=..1
 
 
 ## Grant the advancement
-execute at @s run advancement grant @p[distance=..5] only team_battle_pack:nexus/
+execute at @s run advancement grant @p[distance=..5] only team_battle_pack:nexus/attune
 
 
 
