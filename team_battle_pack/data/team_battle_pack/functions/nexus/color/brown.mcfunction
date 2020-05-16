@@ -16,7 +16,12 @@ execute at @s run playsound minecraft:block.beacon.power_select master @a[distan
 
 
 
-## Reset all players' red dye usage scores
+## Grant the advancement to all players in a 5-block radius
+execute at @s run advancement grant @a[distance=..5] only team_battle_pack:nexus/recolor
+
+
+
+## Reset all players' brown dye usage scores
 execute at @s as @a[scores={tbp_brown_use=1..},distance=..100] run scoreboard players reset @s tbp_brown_use
 
 

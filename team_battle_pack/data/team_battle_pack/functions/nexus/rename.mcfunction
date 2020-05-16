@@ -26,6 +26,11 @@ execute at @s run playsound minecraft:block.beacon.power_select master @a[distan
 
 
 
+## Grant the advancement to all players in a 5-block radius
+execute at @s run advancement grant @a[distance=..5] only team_battle_pack:nexus/rename
+
+
+
 ## Change the sign back to bedrock
 execute at @s run setblock ~ 0 ~ minecraft:bedrock
 
