@@ -11,8 +11,13 @@ execute at @s run playsound minecraft:block.bell.resonate master @a[distance=..1
 
 
 
+## Grant the advancement
+execute at @s run advancement grant @p[distance=..5] only team_battle_pack:nexus/
+
+
+
 ## Signal the attunement to chat
-execute at @s run tellraw @a ["",{"selector":"@p"},{"text":" has "},{"text":"attuned","color":"aqua"},{"text":" to "},{"nbt":"CustomName","entity":"@e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1]","interpret":true},{"text":"."}]
+execute at @s run tellraw @a ["",{"selector":"@p[distance=..5]"},{"text":" has "},{"text":"attuned","color":"aqua"},{"text":" to "},{"nbt":"CustomName","entity":"@e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1]","interpret":true},{"text":"."}]
 
 
 
