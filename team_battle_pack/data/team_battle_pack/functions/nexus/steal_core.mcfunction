@@ -32,7 +32,7 @@ execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] r
 
 
 ## Grant advancements
-advacnement grant @s only team_batle_pack:nexus/steal_core
+advancement grant @s only team_batle_pack:nexus/steal_core
 
 
 
