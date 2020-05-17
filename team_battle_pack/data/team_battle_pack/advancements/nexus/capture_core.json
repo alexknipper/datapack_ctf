@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:diamond"
+        },
+        "title": {"text":"Core Capture"},
+        "description": {"text":"Capture a stolen core by returning it to your team's Nexus."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:nexus/steal_core",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
