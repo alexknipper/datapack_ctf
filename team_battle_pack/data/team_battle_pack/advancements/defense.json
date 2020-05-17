@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:crafting_table"
+        },
+        "title": {"text":"Novice Defender"},
+        "description": {"text":"Construct a Defensive Crafter by throwing a torch onto a crafting table near your Nexus."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:nexus",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

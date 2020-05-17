@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:furnace"
+        },
+        "title": {"text":"Novice Attacker"},
+        "description": {"text":"Construct an Offensive Crafter by throwing a redstone torch onto a furnace near your Nexus."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:nexus",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
