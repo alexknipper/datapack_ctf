@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:charcoal"
+        },
+        "title": {"text":"The Nexus Core"},
+        "description": {"text":"Steal a core from an opposing team's Nexus."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:nexus",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

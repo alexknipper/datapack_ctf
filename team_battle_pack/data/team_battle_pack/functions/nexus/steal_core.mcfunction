@@ -31,6 +31,11 @@ execute at @s at @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] r
 
 
 
+## Grant advancements
+advacnement grant @s only team_batle_pack/nexus/steal_core
+
+
+
 ## Announce the theft to chat
 execute at @s run tellraw @a ["",{"nbt":"CustomName","entity":"@e[type=end_crystal,tag=nexus,distance=..5,limit=1]","interpret":true},{"text":"' "},{"text":"core","color":"gold"},{"text":" was "},{"text":"taken","color":"red"},{"text":" by "},{"selector":"@s"},{"text":"!"}]
 
