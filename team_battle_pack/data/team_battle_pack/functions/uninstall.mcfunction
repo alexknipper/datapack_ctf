@@ -8,6 +8,8 @@ scoreboard players reset nexus tbp_timer
 # Schedule Players
 scoreboard players reset sfx tbp_schedule
 scoreboard players reset nexus tbp_schedule
+scoreboard players reset offense tbp_schedule
+scoreboard players reset defense tbp_schedule
 # Team Players
 scoreboard players reset next_team tbp_team
 # Core Counter Players

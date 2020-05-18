@@ -55,6 +55,10 @@ scoreboard objectives add tbp_gnugget_use minecraft.dropped:minecraft.gold_nugge
 scoreboard players set sfx tbp_schedule 2
 # Activation interval for the nexus scheduler
 scoreboard players set nexus tbp_schedule 5
+# Activation INterval for the offensive scheduler
+scoreboard players set offense tbp_schedule 7
+# Activation interval for the defensive scheduler
+scoreboard players set defense tbp_schedule 11
 
 
 
