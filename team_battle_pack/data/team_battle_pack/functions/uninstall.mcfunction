@@ -67,6 +67,8 @@ scoreboard objectives remove tbp_brown_use
 #scoreboard objectives remove tbp_paper_use
 # Scoreboard value to keep track of dropped gold nuggets (nexus attunement)
 scoreboard objectives remove tbp_gnugget_use
+# Scoreboard value to keep track of dropped redstone torches
+scoreboard objectives remove tbp_rtorch_use
 
 
 

@@ -47,6 +47,14 @@ scoreboard objectives add tbp_brown_use minecraft.dropped:minecraft.brown_dye
 #scoreboard objectives add tbp_paper_use minecraft.dropped:minecraft.paper
 # Scoreboard value to keep track of dropped gold nuggets (nexus attunement)
 scoreboard objectives add tbp_gnugget_use minecraft.dropped:minecraft.gold_nugget
+# Scoreboard value to keep track of dropped redstone torches
+scoreboard objectives add tbp_rtorch_use minecraft.dropped:minecraft.redstone_torch
+# Scoreboard value to keep track of dropped firework stars
+# Scoreboard value to keep track of dropped nether stars
+# Scoreboard value to keep track of dropped arrows
+# Scoreboard value to keep track of dropped fire charges
+# Scoreboard value to keep track of dropped iron swords
+# Scoreboard value to keep track of dropped blaze powder
 
 
 
@@ -55,7 +63,7 @@ scoreboard objectives add tbp_gnugget_use minecraft.dropped:minecraft.gold_nugge
 scoreboard players set sfx tbp_schedule 2
 # Activation interval for the nexus scheduler
 scoreboard players set nexus tbp_schedule 5
-# Activation INterval for the offensive scheduler
+# Activation interval for the offensive scheduler
 scoreboard players set offense tbp_schedule 7
 # Activation interval for the defensive scheduler
 scoreboard players set defense tbp_schedule 11
