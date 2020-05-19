@@ -20,6 +20,12 @@ scoreboard players reset total_removed_cores tbp_num_removed
 scoreboard players reset nexus_create tbp_timer
 # Nexus Schedule Players
 scoreboard players reset nexus_create tbp_schedule
+# Entity counting players
+scoreboard players reset limit tbp_num_craft_d
+scoreboard players reset limit tbp_num_craft_o
+scoreboard players reset limit tbp_num_turret_r
+scoreboard players reset limit tbp_num_turret_m
+scoreboard players reset limit tbp_num_turret_s
 
 
 
@@ -83,6 +89,16 @@ scoreboard objectives remove tbp_fcharge_use
 scoreboard objectives remove tbp_isword_use
 # Scoreboard value to keep track of dropped blaze powder
 scoreboard objectives remove tbp_bpowder_use
+# Scoreboard value to keep track of total defense crafters
+scoreboard objectives remove tbp_num_craft_d
+# Scoreboard value to keep track of total offense crafters
+scoreboard objectives remove tbp_num_craft_o
+# Scoreboard value to keep track of total ranged turrets
+scoreboard objectives remove tbp_num_turret_r
+# Scoreboard value to keep track of total melee turrets
+scoreboard objectives remove tbp_num_turret_m
+# Scoreboard value to keep track of total status turrets
+scoreboard objectives remove tbp_num_turret_s
 
 
 

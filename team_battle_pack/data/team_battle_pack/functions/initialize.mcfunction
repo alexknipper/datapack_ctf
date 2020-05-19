@@ -61,6 +61,16 @@ scoreboard objectives add tbp_fcharge_use minecraft.dropped:minecraft.fire_charg
 scoreboard objectives add tbp_isword_use minecraft.dropped:minecraft.iron_sword
 # Scoreboard value to keep track of dropped blaze powder
 scoreboard objectives add tbp_bpowder_use minecraft.dropped:minecraft.blaze_powder
+# Scoreboard value to keep track of total defense crafters
+scoreboard objectives add tbp_num_craft_d dummy
+# Scoreboard value to keep track of total offense crafters
+scoreboard objectives add tbp_num_craft_o dummy
+# Scoreboard value to keep track of total ranged turrets
+scoreboard objectives add tbp_num_turret_r dummy
+# Scoreboard value to keep track of total melee turrets
+scoreboard objectives add tbp_num_turret_m dummy
+# Scoreboard value to keep track of total status turrets
+scoreboard objectives add tbp_num_turret_s dummy
 
 
 
@@ -80,6 +90,19 @@ scoreboard players set defense tbp_schedule 11
 scoreboard players set next_team tbp_team 1
 ## Create handler for total number of cores
 scoreboard players set total_removed_cores tbp_num_removed 0
+
+
+
+## Create limiters for defenses
+# Max number of crafters
+scoreboard players set limit tbp_num_craft_d 5
+scoreboard players set limit tbp_num_craft_o 5
+# Max number of ranged turrets
+scoreboard players set limit tbp_num_turret_r 10
+# Max number of melee turrets
+scoreboard players set limit tbp_num_turret_m 15
+# Max number of status turrets
+scoreboard players set limit tbp_num_turret_s 25
 
 
 
