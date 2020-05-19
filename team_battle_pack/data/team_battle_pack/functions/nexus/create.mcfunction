@@ -31,6 +31,13 @@ execute at @s run scoreboard players operation @a[distance=..5] tbp_team = next_
 # Increment the team scoreboard
 scoreboard players add next_team tbp_team 1
 
+## Set the nexus' entity counter scores
+execute at @s as @e[type=minecraft:end_crystal,distance=..2,tag=nexus,limit=1,sort=nearest] run scoreboard players set @s tbp_num_craft_d 0
+execute at @s as @e[type=minecraft:end_crystal,distance=..2,tag=nexus,limit=1,sort=nearest] run scoreboard players set @s tbp_num_craft_o 0
+execute at @s as @e[type=minecraft:end_crystal,distance=..2,tag=nexus,limit=1,sort=nearest] run scoreboard players set @s tbp_num_turret_r 0
+execute at @s as @e[type=minecraft:end_crystal,distance=..2,tag=nexus,limit=1,sort=nearest] run scoreboard players set @s tbp_num_turret_m 0
+execute at @s as @e[type=minecraft:end_crystal,distance=..2,tag=nexus,limit=1,sort=nearest] run scoreboard players set @s tbp_num_turret_s 0
+
 ## Reset all players' glowdust usage scores
 execute at @s as @a[scores={tbp_glowdust_use=1..},distance=..100] run scoreboard players reset @s tbp_glowdust_use
 
