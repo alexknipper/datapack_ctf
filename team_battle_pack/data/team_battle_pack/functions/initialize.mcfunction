@@ -71,6 +71,8 @@ scoreboard objectives add tbp_num_turret_r dummy
 scoreboard objectives add tbp_num_turret_m dummy
 # Scoreboard value to keep track of total status turrets
 scoreboard objectives add tbp_num_turret_s dummy
+# Scoreboard value to keep track of item counts in a crafter
+scoreboard objectives add tbp_item_count dummy
 
 
 

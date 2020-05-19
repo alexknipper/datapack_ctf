@@ -99,6 +99,8 @@ scoreboard objectives remove tbp_num_turret_r
 scoreboard objectives remove tbp_num_turret_m
 # Scoreboard value to keep track of total status turrets
 scoreboard objectives remove tbp_num_turret_s
+# Scoreboard value to keep track of item counts in a crafter
+scoreboard objectives remove tbp_item_count
 
 
 
