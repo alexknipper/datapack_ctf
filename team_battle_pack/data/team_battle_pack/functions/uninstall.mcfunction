@@ -69,6 +69,18 @@ scoreboard objectives remove tbp_brown_use
 scoreboard objectives remove tbp_gnugget_use
 # Scoreboard value to keep track of dropped redstone torches
 scoreboard objectives remove tbp_rtorch_use
+# Scoreboard value to keep track of dropped firework stars
+scoreboard objectives remove tbp_firestar_use
+# Scoreboard value to keep track of dropped nether stars
+scoreboard objectives remove tbp_nstar_use
+# Scoreboard value to keep track of dropped arrows
+scoreboard objectives remove tbp_arrow_use
+# Scoreboard value to keep track of dropped fire charges
+scoreboard objectives remove tbp_fcharge_use
+# Scoreboard value to keep track of dropped iron swords
+scoreboard objectives remove tbp_isword_use
+# Scoreboard value to keep track of dropped blaze powder
+scoreboard objectives remove tbp_bpowder_use
 
 
 

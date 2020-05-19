@@ -50,11 +50,17 @@ scoreboard objectives add tbp_gnugget_use minecraft.dropped:minecraft.gold_nugge
 # Scoreboard value to keep track of dropped redstone torches
 scoreboard objectives add tbp_rtorch_use minecraft.dropped:minecraft.redstone_torch
 # Scoreboard value to keep track of dropped firework stars
+scoreboard objectives add tbp_firestar_use minecraft.dropped:minecraft.firework_star
 # Scoreboard value to keep track of dropped nether stars
+scoreboard objectives add tbp_nstar_use minecraft.dropped:minecraft.nether_star
 # Scoreboard value to keep track of dropped arrows
+scoreboard objectives add tbp_arrow_use minecraft.dropped:minecraft.arrow
 # Scoreboard value to keep track of dropped fire charges
+scoreboard objectives add tbp_fcharge_use minecraft.dropped:minecraft.fire_charge
 # Scoreboard value to keep track of dropped iron swords
+scoreboard objectives add tbp_isword_use minecraft.dropped:minecraft.iron_sword
 # Scoreboard value to keep track of dropped blaze powder
+scoreboard objectives add tbp_bpowder_use minecraft.dropped:minecraft.blaze_powder
 
 
 
