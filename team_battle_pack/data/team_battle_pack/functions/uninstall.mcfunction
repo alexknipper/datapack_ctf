@@ -5,6 +5,8 @@
 # Timer Players
 scoreboard players reset sfx tbp_timer
 scoreboard players reset nexus tbp_timer
+scoreboard players reset offense tbp_timer
+scoreboard players reset defense tbp_timer
 # Schedule Players
 scoreboard players reset sfx tbp_schedule
 scoreboard players reset nexus tbp_schedule
