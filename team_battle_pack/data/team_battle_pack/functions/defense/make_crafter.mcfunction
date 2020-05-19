@@ -19,8 +19,11 @@ advancement grant @a[distance=..5] only team_battle_pack:defense
 ## Increment the nexus' entity counter
 scoreboard players add @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp_num_craft_d 1
 
-## Set the crafter's team
+## Set the crafter's team and color
+# Team
 scoreboard players operation @e[type=armor_stand,tag=def_crafter,distance=..1.65,limit=1] tbp_team = @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp_team
+# Color
+scoreboard players operation @e[type=armor_stand,tag=def_crafter,distance=..1.65,limit=1] tbp_color = @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp_color
 
 ## Reset the player's redstone torch usage score
 scoreboard players reset @a[distance=..50] tbp_rtorch_use
