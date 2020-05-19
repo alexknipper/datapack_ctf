@@ -21,3 +21,6 @@ scoreboard players add @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp
 
 ## Set the crafter's team
 scoreboard players operation @e[type=armor_stand,tag=def_crafter,distance=..1.65,limit=1] tbp_team = @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp_team
+
+## Reset the player's redstone torch usage score
+scoreboard players reset @a[distance=..50] tbp_rtorch_use
