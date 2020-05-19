@@ -5,10 +5,10 @@
 summon minecraft:item_frame ~ ~ ~
 
 ## Summon the armor stand
-execute at @e[type=minecraft:item_frame,distance=1..2,limit=1,sort=nearest] run summon minecraft:armor_stand ~ ~-2.25 ~ {Invisible:1b,NoGravity:1b,Invulnerable:1b,Tags:["def_crafter"],ArmorItems:[{},{},{},{id:enchanting_table,Count:1b}],DisabledSlots:5039583}
+execute at @e[type=minecraft:item_frame,distance=..1,limit=1,sort=nearest] run summon minecraft:armor_stand ~ ~-2.25 ~ {Invisible:1b,NoGravity:1b,Invulnerable:1b,Tags:["def_crafter"],ArmorItems:[{},{},{},{id:enchanting_table,Count:1b}],DisabledSlots:5039583}
 
 ## Kill the item frame
-kill @e[type=minecraft:item_frame,distance=1..3,limit=1,sort=nearest]
+kill @e[type=minecraft:item_frame,distance=..1,limit=1,sort=nearest]
 
 ## SFX
 playsound minecraft:block.anvil.place master @a[distance=..50] ~ ~ ~ 100 .65 1
