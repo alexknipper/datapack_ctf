@@ -24,3 +24,6 @@ scoreboard players operation @e[type=armor_stand,tag=def_crafter,distance=..1.65
 
 ## Reset the player's redstone torch usage score
 scoreboard players reset @a[distance=..50] tbp_rtorch_use
+
+## Kill the item that called this function
+kill @s
