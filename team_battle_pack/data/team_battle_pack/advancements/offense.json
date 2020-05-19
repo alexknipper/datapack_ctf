@@ -1,10 +1,10 @@
 ﻿{
      "display": {
         "icon": {
-            "item": "minecraft:blast_furnace"
+            "item": "minecraft:smoker"
         },
         "title": {"text":"Novice Attacker"},
-        "description": {"text":"Construct an Offensive Crafter by throwing a redstone torch onto a blast furnace near your Nexus."},
+        "description": {"text":"Construct an Offensive Crafter by throwing a redstone torch onto a smoker near your Nexus."},
 		"hidden":false
     },
 	"parent": "team_battle_pack:nexus",
