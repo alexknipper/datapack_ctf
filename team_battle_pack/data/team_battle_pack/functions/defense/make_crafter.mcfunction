@@ -5,7 +5,7 @@
 summon minecraft:item_frame ~ ~ ~
 
 ## Summon the armor stand
-execute at @e[type=minecraft:item_frame,distance=..1.25,limit=1,sort=nearest] run summon minecraft:armor_stand ~ ~-2.5 ~ {Invisible:1b,NoGravity:1b,Invulnerable:1b,Tags:["new_def_crafter"],ArmorItems:[{},{},{},{id:enchanting_table,Count:1b}],DisabledSlots:5039583}
+execute at @e[type=minecraft:item_frame,distance=..1.25,limit=1,sort=nearest] run summon minecraft:armor_stand ~ ~-2.5 ~ {Invisible:1b,NoGravity:1b,Invulnerable:1b,Tags:["def_crafter","new_def_crafter"],ArmorItems:[{},{},{},{id:enchanting_table,Count:1b}],DisabledSlots:5039583}
 
 ## Kill the item frame
 kill @e[type=minecraft:item_frame,distance=..1.25,limit=1,sort=nearest]
@@ -26,7 +26,6 @@ scoreboard players operation @e[type=armor_stand,tag=new_def_crafter,distance=..
 scoreboard players operation @e[type=armor_stand,tag=new_def_crafter,distance=..1.65,limit=1] tbp_color = @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp_color
 
 ## Tag the armor stand
-tag @e[type=armor_stand,tag=new_def_crafter,distance=..1.65,limit=1] add def_crafter
 tag @e[type=armor_stand,tag=new_def_crafter,distance=..1.65,limit=1] remove new_def_crafter
 
 ## Reset the player's redstone torch usage score

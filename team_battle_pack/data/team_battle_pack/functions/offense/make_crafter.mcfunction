@@ -5,7 +5,7 @@
 summon minecraft:item_frame ~ ~ ~
 
 ## Summon the armor stand
-execute at @e[type=minecraft:item_frame,distance=..1.25,limit=1,sort=nearest] run summon minecraft:armor_stand ~ ~-2.5 ~ {Invisible:1b,NoGravity:1b,Invulnerable:1b,Tags:["new_atk_crafter"],ArmorItems:[{},{},{},{id:anvil,Count:1b}],DisabledSlots:5039583}
+execute at @e[type=minecraft:item_frame,distance=..1.25,limit=1,sort=nearest] run summon minecraft:armor_stand ~ ~-2.5 ~ {Invisible:1b,NoGravity:1b,Invulnerable:1b,Tags:["atk_crafter","new_atk_crafter"],ArmorItems:[{},{},{},{id:anvil,Count:1b}],DisabledSlots:5039583}
 
 ## Kill the item frame
 kill @e[type=minecraft:item_frame,distance=..1.25,limit=1,sort=nearest]
@@ -25,8 +25,7 @@ scoreboard players operation @e[type=armor_stand,tag=new_atk_crafter,distance=..
 # Color
 scoreboard players operation @e[type=armor_stand,tag=new_atk_crafter,distance=..1.65,limit=1] tbp_color = @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp_color
 
-## Tag the armor stand
-tag @e[type=armor_stand,tag=new_atk_crafter,distance=..1.65,limit=1] add atk_crafter
+## Remove the 'new' tag
 tag @e[type=armor_stand,tag=new_atk_crafter,distance=..1.65,limit=1] remove new_atk_crafter
 
 ## Reset the player's redstone torch usage score
