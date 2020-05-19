@@ -21,12 +21,12 @@ scoreboard players add @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp
 
 ## Set the crafter's team and color
 # Team
-scoreboard players operation @e[type=armor_stand,tag=new_atk_crafter,distance=..4,limit=1] tbp_team = @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp_team
+scoreboard players operation @e[type=armor_stand,tag=new_atk_crafter,distance=..1.65,limit=1] tbp_team = @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp_team
 # Color
-scoreboard players operation @e[type=armor_stand,tag=new_atk_crafter,distance=..4,limit=1] tbp_color = @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp_color
+scoreboard players operation @e[type=armor_stand,tag=new_atk_crafter,distance=..1.65,limit=1] tbp_color = @e[type=end_crystal,tag=nexus,distance=..100,limit=1] tbp_color
 
 ## Remove the 'new' tag
-tag @e[type=armor_stand,tag=new_atk_crafter,distance=..4,limit=1] remove new_atk_crafter
+tag @e[type=armor_stand,tag=new_atk_crafter,distance=..1.65,limit=1] remove new_atk_crafter
 
 ## Reset the player's redstone torch usage score
 scoreboard players reset @a[distance=..50] tbp_rtorch_use
