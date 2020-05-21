@@ -2,7 +2,10 @@
 ### This function determines which crafting recipe (if any) to use
 
 ## Stasis Zone Controller
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:nether_star"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_rod"}] run function team_battle_pack:defense/crafting/effect_field
+# If no item is in output
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:nether_star"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_rod"}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/effect_field
+# If result item is in output
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:nether_star"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_rod"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:nether_star",tag:{display:{Name:'{\"text\":\"Effect Field Core\",\"color\":\"aqua\"}'},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] run function team_battle_pack:defense/crafting/effect_field
 
 
 
