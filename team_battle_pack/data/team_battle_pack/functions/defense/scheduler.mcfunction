@@ -17,6 +17,7 @@ execute as @e[type=minecraft:armor_stand,tag=def_crafter,tag=!new_def_crafter] r
 
 
 ## Item Crafting
+execute as @e[type=minecraft:armor_stand,tag=def_crafter] at @s run function team_battle_pack:defense/craft_items
 
 
 
