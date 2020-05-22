@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:arrow"
+        },
+        "title": {"text":"Automatic Sniper"},
+        "description": {"text":"Craft a Ranged Turret Kit by combining an arrow with charcoal in a Defense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:defense",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
