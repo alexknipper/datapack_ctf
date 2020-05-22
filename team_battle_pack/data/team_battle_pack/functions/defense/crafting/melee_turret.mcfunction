@@ -1,7 +1,7 @@
 ### Team Battle Pack - Melee Turret Kit Crafting
 ### This function, run as/at a crafter, makes the melee turret item
 
-## Decrement the number of iron_swords
+## Decrement the number of iron swords
 # Store the current count into a scoreboard
 execute store result score @s tbp_item_count run data get block ~ ~1 ~ Items[{Slot:0b}].Count 1
 # Decrement the score
