@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:name_tag"
         },
-        "title": {"text":"Nexus Renaming"},
+        "title": {"text":"Legal Name Change"},
         "description": {"text":"Throw a renamed name tag into the Nexus to rename it."},
 		"hidden":false
     },
