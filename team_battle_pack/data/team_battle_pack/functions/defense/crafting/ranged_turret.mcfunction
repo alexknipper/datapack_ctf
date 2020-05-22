@@ -1,7 +1,7 @@
 ### Team Battle Pack - Ranged Turret Kit Crafting
 ### This function, run as/at a crafter, makes the ranged turret item
 
-## Decrement the number of nether stars
+## Decrement the number of arrows
 # Store the current count into a scoreboard
 execute store result score @s tbp_item_count run data get block ~ ~1 ~ Items[{Slot:0b}].Count 1
 # Decrement the score
@@ -11,7 +11,7 @@ execute store result block ~ ~1 ~ Items[{Slot:0b}].Count byte 1 run scoreboard p
 
 
 
-## Decrement the number of blaze rods
+## Decrement the number of charcoal
 # Store the current count into a scoreboard
 execute store result score @s tbp_item_count run data get block ~ ~1 ~ Items[{Slot:1b}].Count 1
 # Decrement the score
