@@ -1,5 +1,5 @@
-### Team Battle Pack - Status Turret Core Crafting
-### This function, run as/at a crafter, makes the status turret base item
+### Team Battle Pack - Poison Turret Kit Crafting
+### This function, run as/at a crafter, makes the poison turret item
 
 ## Decrement the number of spider eyes
 # Store the current count into a scoreboard
