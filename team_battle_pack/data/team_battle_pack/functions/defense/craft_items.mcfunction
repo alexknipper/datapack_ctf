@@ -43,30 +43,30 @@ execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:blaze_rod"}] if data b
 
 ## Poison Turret Kit
 # If result item is in output, but not a full stack
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:spider_eye"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_powder"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:item",tag:{display:{Name:"{\"text\":\"name\",\"color\":\"color\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/poison_turret
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:spider_eye"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Poison Turret Kit\",\"color\":\"dark_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/poison_turret
 # If no item is in output
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:spider_eye"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_powder"}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/poison_turret
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:spider_eye"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/poison_turret
 
 
 
-## Weakness Turret Kit
+## Nausea Turret Kit
 # If result item is in output, but not a full stack
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:fermented_spider_eye"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_powder"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:item",tag:{display:{Name:"{\"text\":\"name\",\"color\":\"color\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/weakness_turret
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:fermented_spider_eye"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Nausea Turret Kit\",\"color\":\"dark_green\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/nausea_turret
 # If no item is in output
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:fermented_spider_eye"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_powder"}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/weakness_turret
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:fermented_spider_eye"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/nausea_turret
 
 
 
 ## Wither Turret Kit
 # If result item is in output, but not a full stack
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:wither_rose"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_powder"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:item",tag:{display:{Name:"{\"text\":\"name\",\"color\":\"color\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/wither_turret
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:wither_rose"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Wither Turret Kit\",\"color\":\"gray\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/wither_turret
 # If no item is in output
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:wither_rose"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_powder"}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/wither_turret
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:wither_rose"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/wither_turret
 
 
 
 ## Slowness Turret Kit
 # If result item is in output, but not a full stack
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:slime_ball"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_powder"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:item",tag:{display:{Name:"{\"text\":\"name\",\"color\":\"color\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/slowness_turret
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:slime_ball"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Slowness Turret Kit\",\"color\":\"dark_blue\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/slowness_turret
 # If no item is in output
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:slime_ball"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_powder"}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/slowness_turret
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:slime_ball"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/slowness_turret
