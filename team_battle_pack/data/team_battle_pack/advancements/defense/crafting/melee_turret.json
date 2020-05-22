@@ -4,7 +4,7 @@
             "item": "minecraft:iron_sword"
         },
         "title": {"text":"Up Close & Personal"},
-        "description": {"text":"Craft a Melee TUrret Kit by combining an iron ingot with charcoal in a Defense Crafter."},
+        "description": {"text":"Craft a Melee Turret Kit by combining an iron ingot with charcoal in a Defense Crafter."},
 		"hidden":false
     },
 	"parent": "team_battle_pack:defense",
