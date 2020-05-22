@@ -13,7 +13,7 @@ execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:nether_star"}] if data
 # If no item is in output
 execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:arrow"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/ranged_turret
 # If result item is in output, but not a full stack
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:arrow"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:arrow",tag:{display:{Name:"{\"Ranged Turret Kit\":\"name\",\"color\":\"aqua\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/ranged_turret
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:arrow"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:arrow",tag:{display:{Name:"{\"text\":\"Ranged Turret Kit\",\"color\":\"aqua\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/ranged_turret
 
 
 
