@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:diamond"
         },
-        "title": {"text":"Core Capture"},
+        "title": {"text":"Public Enemy #1"},
         "description": {"text":"Capture a stolen core by returning it to your team's Nexus."},
 		"hidden":false
     },

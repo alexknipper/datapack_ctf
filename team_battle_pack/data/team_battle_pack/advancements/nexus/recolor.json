@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:red_dye"
         },
-        "title": {"text":"I Liked The Purple Ones"},
+        "title": {"text":"Color Is Key"},
         "description": {"text":"Throw some dye into the Nexus to change its color."},
 		"hidden":false
     },

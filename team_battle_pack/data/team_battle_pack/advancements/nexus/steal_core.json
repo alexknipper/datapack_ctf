@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:blaze_powder"
         },
-        "title": {"text":"The Nexus Core"},
+        "title": {"text":"Finders, Keepers"},
         "description": {"text":"Steal the core from an opposing team's Nexus."},
 		"hidden":false
     },
