@@ -35,9 +35,9 @@ execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:iron_ingot"}] if data 
 
 ## Status Turret Base Controller
 # If result item is in output, but not a full stack
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:blaze_powder"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:item",tag:{display:{Name:"{\"text\":\"name\",\"color\":\"color\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/status_turret_base
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:blaze_rod"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:defense/crafting/status_turret_base
 # If no item is in output
-execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:blaze_powder"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/status_turret_base
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:blaze_rod"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:defense/crafting/status_turret_base
 
 
 
