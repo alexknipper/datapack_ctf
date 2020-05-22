@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:fire_charge"
+        },
+        "title": {"text":"Turret, With Fire"},
+        "description": {"text":"Craft a Ranged Turret Upgrade Module by combining a fire charge with charcoal in a Defense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:defense/ranged_turret",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
