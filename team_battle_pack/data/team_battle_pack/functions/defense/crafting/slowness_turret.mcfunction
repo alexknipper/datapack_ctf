@@ -28,3 +28,8 @@ scoreboard players add @s tbp_item_count 1
 execute store result block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Slowness Turret Kit\",\"color\":\"dark_blue\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}].Count byte 1 run scoreboard players get @s tbp_item_count
 # If the item doesn't already exist in the output slot, create it
 execute unless data block ~ ~1 ~ Items[{Slot:2b}] run data modify block ~ ~1 ~ Items append value {Slot:2b,id:"minecraft:blaze_rod",Count:1b,tag:{display:{Name:"{\"text\":\"Slowness Turret Kit\",\"color\":\"dark_blue\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}
+
+
+
+## Grant the advancement
+advancement grant @a[distance=..10] only team_battle_pack:defense/crafting/slowness_turret
