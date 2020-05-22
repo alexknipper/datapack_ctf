@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:blaze_rod"
+        },
+        "title": {"text":"Status Madness"},
+        "description": {"text":"Craft a Status Turret Core by combining a blaze rod with charcoal in a Defense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:defense",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
