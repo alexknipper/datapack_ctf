@@ -7,7 +7,7 @@
         "description": {"text":"Craft a Poison Turret Kit by combining a spider eye with a Status Turret Core in a Defense Crafter."},
 		"hidden":false
     },
-	"parent": "team_battle_pack:defense",
+	"parent": "team_battle_pack:defense/crafting/status_turret_base",
     "criteria": {
         "nexus_made": {
             "trigger": "minecraft:impossible"
