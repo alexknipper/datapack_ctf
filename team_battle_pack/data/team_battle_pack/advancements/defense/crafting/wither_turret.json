@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:wither_rose"
+        },
+        "title": {"text":"Withering Creation"},
+        "description": {"text":"Craft a Wither Turret Kit by combining a wither rose with a Status Turret Core in a Defense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:defense/crafting/status_turret_base",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
