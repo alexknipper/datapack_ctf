@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:slime_ball"
+        },
+        "title": {"text":"Slow & Steady"},
+        "description": {"text":"Craft a Slowness Turret Kit by combining a slimeball with a Status Turret Core in a Defense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:defense/crafting/status_turret_base",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
