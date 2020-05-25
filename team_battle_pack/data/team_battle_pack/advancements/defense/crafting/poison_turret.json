@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:spider_eye"
+        },
+        "title": {"text":"Toxic Effort"},
+        "description": {"text":"Craft a Poison Turret Kit by combining a spider eye with a Status Turret Core in a Defense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:defense",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
