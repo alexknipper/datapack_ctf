@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:sugar"
         },
-        "title": {"text":"Portable Running Shoes"},
+        "title": {"text":"New Running Shoes"},
         "description": {"text":"Craft a Swiftness Field by combining sugar with charcoal in an Offense Crafter."},
 		"hidden":false
     },
