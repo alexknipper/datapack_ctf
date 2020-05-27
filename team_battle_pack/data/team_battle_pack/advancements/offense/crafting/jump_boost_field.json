@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:rabbit_foot"
+        },
+        "title": {"text":"Portable Jump Pad"},
+        "description": {"text":"Craft a Jump Boost Field by combining a rabbit's foot with charcoal in an Offense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:offense",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
