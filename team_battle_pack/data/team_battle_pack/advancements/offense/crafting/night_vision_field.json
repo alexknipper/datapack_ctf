@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:golden_carrot"
+        },
+        "title": {"text":"Night Vision Goggles"},
+        "description": {"text":"Craft a Night Vision Field by combining a golden carrot with charcoal in an Offense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:offense",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
