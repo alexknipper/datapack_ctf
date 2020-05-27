@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:blaze_powder"
+        },
+        "title": {"text":"Reserve Strength"},
+        "description": {"text":"Craft a Strength Field by combining blaze powder with charcoal in an Offense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:offense",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
