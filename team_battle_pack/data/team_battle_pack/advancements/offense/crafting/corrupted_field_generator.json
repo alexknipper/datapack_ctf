@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:charcoal"
+        },
+        "title": {"text":"Inverted Effects"},
+        "description": {"text":"Craft a Corrupted Field Generator by combining a fermented spider eye with charcoal in an Offense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:offense",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
