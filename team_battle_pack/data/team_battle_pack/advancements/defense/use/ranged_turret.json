@@ -5,7 +5,7 @@
         },
         "title": {"text":"Strategic Positioning"},
         "frame": "goal",
-        "description": {"text":"Create the Ranged Turret by throwing a Ranged Turret Kit onto a smooth stone slab near your Nexus."},
+        "description": {"text":"Create a Ranged Turret by throwing a Ranged Turret Kit onto a smooth stone slab near your Nexus."},
 		"hidden":false
     },
 	"parent": "team_battle_pack:defense/crafting/ranged_turret",
