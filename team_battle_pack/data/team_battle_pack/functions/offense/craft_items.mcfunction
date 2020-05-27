@@ -54,3 +54,11 @@ execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:sugar"}] if data block
 execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:pufferfish"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:firework_star",tag:{display:{Name:"{\"text\":\"Water Breathing Field\",\"color\":\"blue\"}"},Explosion:{Colors:[I;2437522]},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:offense/crafting/water_breathing_field
 # If no item is in output
 execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:pufferfish"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:offense/crafting/water_breathing_field
+
+
+
+## Slow Falling Field
+# If result item is in output, but not a full stack
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:phantom_membrane"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:firework_star",tag:{display:{Name:"{\"text\":\"Slow Falling Field\",\"color\":\"dark_purple\"}"},Explosion:{Colors:[I;8073150]},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:offense/crafting/slow_falling_field
+# If no item is in output
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:phantom_membrane"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:offense/crafting/slow_falling_field

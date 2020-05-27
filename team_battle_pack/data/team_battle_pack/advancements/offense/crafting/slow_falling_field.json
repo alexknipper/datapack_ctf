@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "title": {"text":"Reserve Parachute"},
+        "description": {"text":"Craft a Slow Falling Field by combining a phantom membrane with charcoal in an Offense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:offense",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
