@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:pufferfish"
+        },
+        "title": {"text":"Scuba Mask"},
+        "description": {"text":"Craft a Water Breathing Field by combining a pufferfish with charcoal in an Offense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:offense",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
