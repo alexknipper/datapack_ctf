@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:golden_carrot"
+        },
+        "title": {"text":"Transparency Zone"},
+        "description": {"text":"Craft an Invisibility Field by combining a golden carrot with a Corrupted Field Generator in an Offense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:offense/crafting/corrupted_field_generator",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
