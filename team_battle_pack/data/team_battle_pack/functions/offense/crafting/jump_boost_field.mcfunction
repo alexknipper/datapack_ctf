@@ -32,4 +32,4 @@ execute unless data block ~ ~1 ~ Items[{Slot:2b}] run data modify block ~ ~1 ~ I
 
 
 ## Grant the advancement
-advancement grant @a[distance=..10] only team_battle_pack:offense/crafting/regeneration_field
+advancement grant @a[distance=..10] only team_battle_pack:offense/crafting/jump_boost_field
