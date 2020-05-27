@@ -65,8 +65,16 @@ execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:phantom_membrane"}] if
 
 
 
-## Slow Falling Field
+## Night Vision Field
 # If result item is in output, but not a full stack
 execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:golden_carrot"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:firework_star",tag:{display:{Name:"{\"text\":\"Night Vision Field\",\"color\":\"yellow\"}"},Explosion:{Colors:[I;14602026]},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:offense/crafting/night_vision_field
 # If no item is in output
 execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:golden_carrot"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal"}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:offense/crafting/night_vision_field
+
+
+
+## Levitation Field
+# If result item is in output, but not a full stack
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:phantom_membrane"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal",tag:{display:{Name:"{\"text\":\"Corrupted Field Generator\",\"color\":\"dark_green\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] if data block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:firework_star",tag:{display:{Name:"{\"text\":\"Levitation Field\",\"color\":\"light_purple\"}"},Explosion:{Colors:[I;12801229]},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b,Count:64b}] run function team_battle_pack:offense/crafting/levitation_field
+# If no item is in output
+execute if data block ~ ~1 ~ Items[{Slot:0b,id:"minecraft:phantom_membrane"}] if data block ~ ~1 ~ Items[{Slot:1b,id:"minecraft:charcoal",tag:{display:{Name:"{\"text\":\"Corrupted Field Generator\",\"color\":\"dark_green\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}] unless data block ~ ~1 ~ Items[{Slot:2b}] run function team_battle_pack:offense/crafting/levitation_field

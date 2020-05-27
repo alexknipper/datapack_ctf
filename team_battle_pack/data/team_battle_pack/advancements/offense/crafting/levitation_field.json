@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "title": {"text":"Anti-Gravity Zone"},
+        "description": {"text":"Craft a Levitation Field by combining a phantom membrane with a Corrupted Field Generator in an Offense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:offense/crafting/corrupted_field_generator",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
