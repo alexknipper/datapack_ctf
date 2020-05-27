@@ -1,0 +1,16 @@
+﻿{
+     "display": {
+        "icon": {
+            "item": "minecraft:magma_cream"
+        },
+        "title": {"text":"Fireproof"},
+        "description": {"text":"Craft a Fire Resistance Field by combining magma cream with charcoal in an Offense Crafter."},
+		"hidden":false
+    },
+	"parent": "team_battle_pack:offense",
+    "criteria": {
+        "nexus_made": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
