@@ -1,7 +1,7 @@
 ﻿{
      "display": {
         "icon": {
-            "item": "minecraft:charcoal"
+            "item": "minecraft:fermented_spider_eye"
         },
         "title": {"text":"Inverted Effects"},
         "description": {"text":"Craft a Corrupted Field Generator by combining a fermented spider eye with charcoal in an Offense Crafter."},
