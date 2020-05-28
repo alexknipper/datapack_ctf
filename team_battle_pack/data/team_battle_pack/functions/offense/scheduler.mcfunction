@@ -18,7 +18,7 @@ execute as @e[type=minecraft:armor_stand,tag=atk_crafter] at @s run function tea
 # On Ground
 execute as @a[scores={tbp_firestar_use=1..}] at @s anchored eyes at @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}},OnGround:1b},distance=..5,limit=1,sort=nearest] run function team_battle_pack:offense/use_items
 # 2 Blocks Away
-execute as @a[scores={tbp_firestar_use=1..}] at @s anchored eyes at @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},distance=1.5..5,limit=1,sort=nearest] run function team_battle_pack:offense/use_items
+execute as @a[scores={tbp_firestar_use=1..}] at @s anchored eyes at @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},distance=2..5,limit=1,sort=nearest] run function team_battle_pack:offense/use_items
 
 
 
