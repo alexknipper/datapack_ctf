@@ -27,7 +27,7 @@ execute store result score @s tbp_item_count run data get block ~ ~1 ~ Items[{Sl
 scoreboard players add @s tbp_item_count 1
 execute store result block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:nether_star",tag:{display:{Name:"{\"text\":\"Effect Field Core\",\"color\":\"aqua\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}].Count byte 1 run scoreboard players get @s tbp_item_count
 # If the item doesn't already exist in the output slot, create it
-execute unless data block ~ ~1 ~ Items[{Slot:2b}] run data modify block ~ ~1 ~ Items append value {Slot:2b,id:"minecraft:nether_star",Count:1b,tag:{display:{Name:"{\"text\":\"Effect Field Core\",\"color\":\"aqua\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}
+execute unless data block ~ ~1 ~ Items[{Slot:2b}] run data modify block ~ ~1 ~ Items append value {Slot:2b,id:"minecraft:nether_star",Count:1b,tag:{display:{Name:"{\"text\":\"Effect Field Core\",\"color\":\"aqua\"}",Lore:["\"Throw this into a Nexus to\"","\"create the Effect Field\""]},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}
 
 
 
