@@ -11,7 +11,7 @@ execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{d
 # Jump Boost Field
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{display:{Name:'{"text":"Jump Boost Field","color":"green"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},distance=..1,limit=1,sort=nearest] at @s run summon minecraft:area_effect_cloud ~ ~.15 ~ {Particle:"totem_of_undying",Radius:4f,RadiusPerTick:-0.015f,Duration:200,Tags:["jmp_fld"]}
 # Swiftness Field
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{display:{Name:'{"text":"Swiftness Field","color":"aqua"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},distance=..1,limit=1,sort=nearest] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Particle:"firework",Radius:4f,RadiusPerTick:-0.015f,Duration:200,Tags:["swft_fld"]}
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{display:{Name:'{"text":"Swiftness Field","color":"aqua"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},distance=..1,limit=1,sort=nearest] at @s run summon minecraft:area_effect_cloud ~ ~.15 ~ {Particle:"firework",Radius:4f,RadiusPerTick:-0.015f,Duration:200,Tags:["swft_fld"]}
 # Water Breathing Field
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{display:{Name:'{"text":"Water Breathing Field","color":"blue"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},distance=..1,limit=1,sort=nearest] at @s run summon minecraft:area_effect_cloud ~ ~.15 ~ {Particle:"dolphin",Radius:5f,RadiusPerTick:-0.01f,Duration:400,Tags:["wtr_brth_fld"]}
 # Slow Falling Field
