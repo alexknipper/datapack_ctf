@@ -11,3 +11,23 @@ execute as @e[type=minecraft:armor_stand,tag=atk_crafter,tag=!new_atk_crafter] r
 
 ## Item Crafting
 execute as @e[type=minecraft:armor_stand,tag=atk_crafter] at @s run function team_battle_pack:offense/craft_items
+
+
+
+## Item Use
+execute as @a[scores={tbp_firestar_use=1..}] at @s at @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},distance=..5,limit=1,sort=nearest] run function team_battle_pack:offense/use_items
+
+
+
+## Area Effect Clouds
+# Strength
+#execute as @e[type=minecraft:area_effect_cloud,tag=str_fld] at @s run function team_battle_pack:offense/effects/strength
+# Regeneration
+# Fire Resistance
+# Jump Boost
+# Swiftness
+# Water Breathing
+# Slow Falling
+# Night Vision
+# Levitation
+# Invisibility 
