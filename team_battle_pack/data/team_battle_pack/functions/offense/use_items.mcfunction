@@ -3,7 +3,7 @@
 
 ## Summon the appropriate Area Effect Cloud
 # Strength Field
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{display:{Name:'{"text":"Strength Field","color":"dark_red"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},distance=..1,limit=1,sort=nearest] run summon minecraft:area_effect_cloud {Particle:"flame",Radius:4f,RadiusPerTick:-0.015f,Duration:200,Tags:["str_fld"]}
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{display:{Name:'{"text":"Strength Field","color":"dark_red"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},distance=..1,limit=1,sort=nearest] run summon minecraft:area_effect_cloud ~ ~ ~ {Particle:"flame",Radius:4f,RadiusPerTick:-0.015f,Duration:200,Tags:["str_fld"]}
 # Regeneration Field
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{display:{Name:'{"text":"Regeneration Field","color":"red"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},distance=..1,limit=1,sort=nearest] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Particle:"happy_villager",Radius:5.5f,RadiusPerTick:-0.0075f,Duration:600,Tags:["regen_fld"]}
 # Fire Resistance Field
