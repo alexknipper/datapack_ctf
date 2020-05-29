@@ -42,4 +42,4 @@ execute as @e[type=minecraft:area_effect_cloud,tag=ngt_vis_fld] at @s run functi
 # Levitation
 execute as @e[type=minecraft:area_effect_cloud,tag=lev_fld] at @s run function team_battle_pack:offense/effects/levitation
 # Invisibility 
-execute as @e[type=minecraft:area_effect_cloud,tag=invis_field] at @s run function team_battle_pack:offense/effects/invisibility
+execute as @e[type=minecraft:area_effect_cloud,tag=invis_fld] at @s run function team_battle_pack:offense/effects/invisibility
