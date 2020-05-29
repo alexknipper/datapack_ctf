@@ -23,11 +23,11 @@ execute store result block ~ ~1 ~ Items[{Slot:1b}].Count byte 1 run scoreboard p
 
 ## Craft the resultant item
 # If the item already exists in the output slot, increment it
-execute store result score @s tbp_item_count run data get block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}].Count 1
+execute store result score @s tbp_item_count run data get block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}",Lore:["\"Combine this core with\"","\"different items to craft\"","\"various Status Turrets\""]},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}].Count 1
 scoreboard players add @s tbp_item_count 1
-execute store result block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}].Count byte 1 run scoreboard players get @s tbp_item_count
+execute store result block ~ ~1 ~ Items[{Slot:2b,id:"minecraft:blaze_rod",tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}",Lore:["\"Combine this core with\"","\"different items to craft\"","\"various Status Turrets\""]},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}].Count byte 1 run scoreboard players get @s tbp_item_count
 # If the item doesn't already exist in the output slot, create it
-execute unless data block ~ ~1 ~ Items[{Slot:2b}] run data modify block ~ ~1 ~ Items append value {Slot:2b,id:"minecraft:blaze_rod",Count:1b,tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}"},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}
+execute unless data block ~ ~1 ~ Items[{Slot:2b}] run data modify block ~ ~1 ~ Items append value {Slot:2b,id:"minecraft:blaze_rod",Count:1b,tag:{display:{Name:"{\"text\":\"Status Turret Core\",\"color\":\"light_purple\"}",Lore:["\"Combine this core with\"","\"different items to craft\"","\"various Status Turrets\""]},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:39}}
 
 
 
