@@ -24,7 +24,7 @@ execute as @a[scores={tbp_firestar_use=1..}] at @s anchored eyes at @e[type=mine
 
 ## Area Effect Clouds
 # Strength
-#execute as @e[type=minecraft:area_effect_cloud,tag=str_fld] at @s run function team_battle_pack:offense/effects/strength
+execute as @e[type=minecraft:area_effect_cloud,tag=str_fld] at @s run function team_battle_pack:offense/effects/strength
 # Regeneration
 # Fire Resistance
 # Jump Boost
