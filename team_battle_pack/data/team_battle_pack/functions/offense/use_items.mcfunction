@@ -25,6 +25,11 @@ execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{d
 
 
 
+## SFX
+playsound minecraft:item.trident.return master @a[distance=..7.5] ~ ~ ~ 100 .35
+
+
+
 ## Assign the Area Effect Cloud's team
 scoreboard players operation @e[type=minecraft:area_effect_cloud,distance=..1,limit=1,sort=nearest] tbp_team = @s tbp_team
 
