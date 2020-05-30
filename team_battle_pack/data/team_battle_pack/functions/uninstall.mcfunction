@@ -87,16 +87,16 @@ scoreboard objectives remove tbp_arrow_use
 scoreboard objectives remove tbp_fcharge_use
 # Scoreboard value to keep track of dropped iron swords
 scoreboard objectives remove tbp_isword_use
-# Scoreboard value to keep track of dropped blaze powder
-#scoreboard objectives remove tbp_bpowder_use
+# Scoreboard value to keep track of dropped blaze rods
+scoreboard objectives remove tbp_blazrod_use
 # Scoreboard value to keep track of dropped spider eyes
-scoreboard objectives remove tbp_spieye_use
+#scoreboard objectives remove tbp_spieye_use
 # Scoreboard value to keep track of dropped fermented spider eyes
-scoreboard objectives remove tbp_fspieye_use
+#scoreboard objectives remove tbp_fspieye_use
 # Scoreboard value to keep track of dropped wither roses
-scoreboard objectives remove tbp_withrose_use
+#scoreboard objectives remove tbp_withrose_use
 # Scoreboard value to keep track of dropped slimeballs
-scoreboard objectives remove tbp_slimball_use
+#scoreboard objectives remove tbp_slimball_use
 # Scoreboard value to keep track of total defense crafters
 scoreboard objectives remove tbp_num_craft_d
 # Scoreboard value to keep track of total offense crafters

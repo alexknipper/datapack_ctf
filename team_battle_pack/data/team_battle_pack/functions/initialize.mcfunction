@@ -59,16 +59,16 @@ scoreboard objectives add tbp_arrow_use minecraft.dropped:minecraft.arrow
 scoreboard objectives add tbp_fcharge_use minecraft.dropped:minecraft.fire_charge
 # Scoreboard value to keep track of dropped iron swords
 scoreboard objectives add tbp_isword_use minecraft.dropped:minecraft.iron_sword
-# Scoreboard value to keep track of dropped blaze powder
-#scoreboard objectives add tbp_bpowder_use minecraft.dropped:minecraft.blaze_powder
+# Scoreboard value to keep track of dropped blaze rods
+scoreboard objectives add tbp_blazrod_use minecraft.dropped:minecraft.blaze_rod
 # Scoreboard value to keep track of dropped spider eyes
-scoreboard objectives add tbp_spieye_use minecraft.dropped:minecraft.spider_eye
+#scoreboard objectives add tbp_spieye_use minecraft.dropped:minecraft.spider_eye
 # Scoreboard value to keep track of dropped fermented spider eyes
-scoreboard objectives add tbp_fspieye_use minecraft.dropped:minecraft.fermented_spider_eye
+#scoreboard objectives add tbp_fspieye_use minecraft.dropped:minecraft.fermented_spider_eye
 # Scoreboard value to keep track of dropped wither roses
-scoreboard objectives add tbp_withrose_use minecraft.dropped:minecraft.wither_rose
+#scoreboard objectives add tbp_withrose_use minecraft.dropped:minecraft.wither_rose
 # Scoreboard value to keep track of dropped slimeballs
-scoreboard objectives add tbp_slimball_use minecraft.dropped:minecraft.slime_ball
+#scoreboard objectives add tbp_slimball_use minecraft.dropped:minecraft.slime_ball
 # Scoreboard value to keep track of total defense crafters
 scoreboard objectives add tbp_num_craft_d dummy
 # Scoreboard value to keep track of total offense crafters
