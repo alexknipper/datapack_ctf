@@ -6,6 +6,11 @@ execute at @s as @a if score @s tbp_team = @e[type=minecraft:end_crystal,distanc
 
 
 
+## Return a nether star if there is an effect field
+execute at @s if entity @e[type=minecraft:armor_stand,tag=effect_field] run summon minecraft:item ~ ~.3 ~ {Item:{id:"minecraft:nether_star",Count:1b}}
+
+
+
 ## Kill the score indicator and 'removed core' indicator
 execute at @s run kill @e[type=minecraft:armor_stand,distance=..1]
 

@@ -5,6 +5,6 @@
 # Haste
 effect give @s minecraft:haste 5 1 true
 # Health Boost
-effect give @s minecraft:health_boost 5 0 true
+#effect give @s minecraft:health_boost 5 0 true
 # Resistance
 effect give @s minecraft:resistance 5 0 true
