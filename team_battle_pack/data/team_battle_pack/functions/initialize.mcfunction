@@ -58,7 +58,7 @@ scoreboard objectives add tbp_arrow_use minecraft.dropped:minecraft.arrow
 # Scoreboard value to keep track of dropped fire charges
 scoreboard objectives add tbp_fcharge_use minecraft.dropped:minecraft.fire_charge
 # Scoreboard value to keep track of dropped iron swords
-scoreboard objectives add tbp_isword_use minecraft.dropped:minecraft.iron_sword
+scoreboard objectives add tbp_iringot_use minecraft.dropped:minecraft.iron_ingot
 # Scoreboard value to keep track of dropped blaze rods
 scoreboard objectives add tbp_blazrod_use minecraft.dropped:minecraft.blaze_rod
 # Scoreboard value to keep track of dropped spider eyes

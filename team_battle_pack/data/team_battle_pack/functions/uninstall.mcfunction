@@ -86,7 +86,7 @@ scoreboard objectives remove tbp_arrow_use
 # Scoreboard value to keep track of dropped fire charges
 scoreboard objectives remove tbp_fcharge_use
 # Scoreboard value to keep track of dropped iron swords
-scoreboard objectives remove tbp_isword_use
+scoreboard objectives remove tbp_iringot_use
 # Scoreboard value to keep track of dropped blaze rods
 scoreboard objectives remove tbp_blazrod_use
 # Scoreboard value to keep track of dropped spider eyes
