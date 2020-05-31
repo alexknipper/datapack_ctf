@@ -13,9 +13,9 @@ kill @e[type=minecraft:item_frame,distance=..1,limit=1,sort=nearest]
 
 ## Assign the turret's team and color
 # Team
-execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run scoreboard players operation @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..2,limit=1,sort=nearest] tbp_team = @s tbp_team
+execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run scoreboard players operation @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..2.5,limit=1,sort=nearest] tbp_team = @s tbp_team
 # Color
-execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run scoreboard players operation @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..2,limit=1,sort=nearest] tbp_color = @s tbp_color
+execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run scoreboard players operation @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..2.5,limit=1,sort=nearest] tbp_color = @s tbp_color
 
 
 
