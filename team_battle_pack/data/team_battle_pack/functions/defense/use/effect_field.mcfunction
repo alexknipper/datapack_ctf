@@ -19,5 +19,10 @@ playsound minecraft:block.conduit.activate master @a[distance=..100] ~ ~ ~ 100 .
 
 
 
+## Reset all usage scores
+scoreboard players reset @a[distance=..100] tbp_nstar_use
+
+
+
 ## Kill the executing item
 kill @s
