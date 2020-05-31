@@ -8,9 +8,9 @@ execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] at @s r
 
 ## Give the armor stand the appropriate team and color
 # Team
-execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] at @s run scoreboard players operation @e[type=minecraft:armor_stand,tag=effect_field] tbp_team = @s tbp_team
+execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] at @s run scoreboard players operation @e[type=minecraft:armor_stand,tag=effect_field,distance=..1,limit=1] tbp_team = @s tbp_team
 # Color
-execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] at @s run scoreboard players operation @e[type=minecraft:armor_stand,tag=effect_field] tbp_color = @s tbp_color
+execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] at @s run scoreboard players operation @e[type=minecraft:armor_stand,tag=effect_field,distance=..1,limit=1] tbp_color = @s tbp_color
 
 
 
