@@ -23,11 +23,12 @@ execute as @e[type=minecraft:armor_stand,tag=def_crafter] at @s run function tea
 
 ## Block Crafting
 # Effect Field
-#execute as @a[scores=]
+execute at @a[scores={tbp_nstar_use=1..}] as @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:'{"text":"Effect Field Core","color":"aqua"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}},OnGround:1b},distance=..5,limit=1,sort=nearest] at @s if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run function team_battle_pack:defense/use/effect_field
 
 
 
 ## Effect Fields
+execute as @e[type=minecraft:armor_stand,tag=effect_field] at @s run function team_battle_pack:defense/effects/effect_field
 
 
 
