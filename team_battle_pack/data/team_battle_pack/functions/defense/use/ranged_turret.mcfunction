@@ -19,6 +19,11 @@ execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run sco
 
 
 
+## Increment the Nexus' turret counter
+scoreboard players add @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1,sort=nearest] tbp_num_turret_r 1
+
+
+
 ## SFX
 playsound minecraft:item.shield.break master @a[distance=..10] ~ ~ ~ 100 .5 1
 
