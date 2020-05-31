@@ -24,6 +24,14 @@ execute as @e[type=minecraft:armor_stand,tag=def_crafter] at @s run function tea
 ## Block Crafting
 # Effect Field
 execute at @a[scores={tbp_nstar_use=1..}] as @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:'{"text":"Effect Field Core","color":"aqua"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}},OnGround:1b},distance=..5,limit=1,sort=nearest] at @s unless entity @e[type=minecraft:armor_stand,tag=effect_field,distance=..2,limit=1] if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] run function team_battle_pack:defense/use/effect_field
+# Ranged Turrets
+execute at @a[scores={tbp_arrow_use=1..}] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_team if score @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_num_turret_r < limit tbp_num_turret_r as @e[type=minecraft:item,nbt={Item:{id:"minecraft:arrow",tag:{display:{Name:'{"text":"Ranged Turret Kit","color":"yellow"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}},OnGround:1b},distance=..5,limit=1,sort=nearest] at @s unless entity @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1.65] if block ~ ~-.15 ~ minecraft:smooth_stone_slab if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..98,limit=1] run function team_battle_pack:defense/use/ranged_turret
+# Ranged Turret Upgrade
+execute at @a[scores={tbp_fcharge_use=1..}] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_team as @e[type=minecraft:item,nbt={Item:{id:"minecraft:fire_charge",tag:{display:{Name:'{"text":"Ranged Turret Upgrade Module","color":"gold"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}},OnGround:1b},distance=..5,limit=1,sort=nearest] at @s at @e[type=minecraft:armor_stand,tag=ranged_turret,tag=!upgraded,distance=..1,limit=1] run function team_battle_pack:defense/use/ranged_turret_upgrade
+# Melee Turrets
+execute at @a[scores={tbp_iringot_use=1..}] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_team if score @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_num_turret_m < limit tbp_num_turret_m as @e[type=minecraft:item,nbt={Item:{id:"minecraft:iron_ingot",tag:{display:{Name:'{"text":"Melee Turret Kit","color":"red"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}},OnGround:1b},distance=..5,limit=1,sort=nearest] at @s unless entity @e[type=minecraft:armor_stand,tag=melee_turret,distance=..1.65] if block ~ ~-.15 ~ minecraft:smooth_stone_slab if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..98,limit=1] run function team_battle_pack:defense/use/melee_turret
+# Status Turrets
+execute at @a[scores={tbp_blazrod_use=1..}] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_team if score @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_num_turret_s < limit tbp_num_turret_s as @e[type=minecraft:item,nbt={Item:{id:"minecraft:blaze_rod",tag:{HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}},OnGround:1b},distance=..5,limit=1,sort=nearest] at @s unless entity @e[type=minecraft:armor_stand,tag=status_turret,distance=..1.65] if block ~ ~-.15 ~ minecraft:smooth_stone_slab if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..98,limit=1] run function team_battle_pack:defense/use/status_turret
 
 
 
@@ -33,3 +41,6 @@ execute as @e[type=minecraft:armor_stand,tag=effect_field] at @s run function te
 
 
 ## Turrets
+# Ranged
+# Melee
+# Status
