@@ -22,6 +22,10 @@ scoreboard objectives add tbp_prev_removed dummy
 scoreboard objectives add tbp_num_rotated dummy
 # Scoreboard value to keep track of core holder deaths
 scoreboard objectives add tbp_holder_death deathCount
+# Scoreboard value to keep track of defense timers
+scoreboard objectives add tbp_def_timer dummy
+# Scoreboard value to keep track of defense schedules
+scoreboard objectives add tbp_def_schdul dummy
 # Scoreboard value to keep track of dropped glowstone dust (nexus creation)
 scoreboard objectives add tbp_glowdust_use minecraft.dropped:minecraft.glowstone_dust
 # Scoreboard value to keep track of dropped name tags (nexus renaming)
@@ -113,6 +117,16 @@ scoreboard players set limit tbp_num_turret_r 10
 scoreboard players set limit tbp_num_turret_m 15
 # Max number of status turrets
 scoreboard players set limit tbp_num_turret_s 25
+
+
+
+## Create schedules for defense turrets
+# Ranged Turrets
+scoreboard players set ranged tbp_def_schdul 8
+# Melee Turrets
+scoreboard players set melee tbp_def_schdul 5
+# Status Turrets
+scoreboard players set status tbp_def_schdul 2
 
 
 

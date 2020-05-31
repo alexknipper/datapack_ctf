@@ -26,6 +26,10 @@ scoreboard players reset limit tbp_num_craft_o
 scoreboard players reset limit tbp_num_turret_r
 scoreboard players reset limit tbp_num_turret_m
 scoreboard players reset limit tbp_num_turret_s
+# Defense timers
+scoreboard players reset ranged tbp_def_schdul
+scoreboard players reset melee tbp_def_schdul
+scoreboard players reset status tbp_def_schdul
 
 
 
@@ -50,6 +54,10 @@ scoreboard objectives remove tbp_prev_removed
 scoreboard objectives remove tbp_num_rotated
 # Scoreboard value to keep track of core holder deaths
 scoreboard objectives remove tbp_holder_death
+# Scoreboard value to keep track of defense timers
+scoreboard objectives remove tbp_def_timer
+# Scoreboard value to keep track of defense schedules
+scoreboard objectives remove tbp_def_schdul
 # Scoreboard value to keep track of dropped glowstone dust (nexus creation)
 scoreboard objectives remove tbp_glowdust_use
 # Scoreboard value to keep track of dropped name tags (nexus renaming)
