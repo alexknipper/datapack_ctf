@@ -3,8 +3,11 @@
 
 ## Increment the necessary timers
 # Timer to control ranged turrets
+scoreboard players add @e[type=minecraft:armor_stand,tag=ranged_turret] tbp_def_timer 1
 # Timer to control melee turrets
+scoreboard players add @e[type=minecraft:armor_stand,tag=melee_turret] tbp_def_timer 1
 # Timer to control status turrets
+scoreboard players add @e[type=minecraft:armor_stand,tag=status_turret] tbp_def_timer 1
 
 
 
@@ -40,7 +43,7 @@ execute as @e[type=minecraft:armor_stand,tag=effect_field] at @s run function te
 
 
 
-## Turrets
+## Turret Firing
 # Ranged
 # Melee
 # Status
