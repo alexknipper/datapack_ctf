@@ -3,9 +3,10 @@
 
 ## Run the calculations to get dx, dy, and dz
 execute as @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1,sort=nearest] run scoreboard players operation @s tbp_ranged_dx -= @s tbp_ranged_x
-execute as @s[type=minecraft:fireball] as @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1,sort=nearest] run scoreboard players remove @s tbp_ranged_dy 1
 execute as @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1,sort=nearest] run scoreboard players operation @s tbp_ranged_dy -= @s tbp_ranged_y
 execute as @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1,sort=nearest] run scoreboard players operation @s tbp_ranged_dz -= @s tbp_ranged_z
+# Adjust the dy for fireballs
+#execute as @s[type=minecraft:fireball] as @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1,sort=nearest] run scoreboard players add @s tbp_ranged_dy 1
 
 
 
@@ -16,9 +17,9 @@ execute store result entity @s[type=minecraft:arrow] Motion[0] double .1 run sco
 execute store result entity @s[type=minecraft:arrow] Motion[1] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dy
 execute store result entity @s[type=minecraft:arrow] Motion[2] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dz
 # If the projectile is a fireball
-execute store result entity @s[type=minecraft:fireball] direction[0] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dx
-execute store result entity @s[type=minecraft:fireball] direction[1] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dy
-execute store result entity @s[type=minecraft:fireball] direction[2] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dz
+execute store result entity @s[type=minecraft:fireball] direction[0] double .15 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dx
+execute store result entity @s[type=minecraft:fireball] direction[1] double .2 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dy
+execute store result entity @s[type=minecraft:fireball] direction[2] double .15 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dz
 
 
 
