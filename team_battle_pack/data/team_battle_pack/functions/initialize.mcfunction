@@ -26,6 +26,13 @@ scoreboard objectives add tbp_holder_death deathCount
 scoreboard objectives add tbp_def_timer dummy
 # Scoreboard value to keep track of defense schedules
 scoreboard objectives add tbp_def_schdul dummy
+# Scoreboard values to keep track of positions (for ranged turrets)
+scoreboard objectives add tbp_ranged_x dummy
+scoreboard objectives add tbp_ranged_y dummy
+scoreboard objectives add tbp_ranged_z dummy
+scoreboard objectives add tbp_ranged_dx dummy
+scoreboard objectives add tbp_ranged_dy dummy
+scoreboard objectives add tbp_ranged_dz dummy
 # Scoreboard value to keep track of dropped glowstone dust (nexus creation)
 scoreboard objectives add tbp_glowdust_use minecraft.dropped:minecraft.glowstone_dust
 # Scoreboard value to keep track of dropped name tags (nexus renaming)

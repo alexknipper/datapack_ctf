@@ -58,6 +58,13 @@ scoreboard objectives remove tbp_holder_death
 scoreboard objectives remove tbp_def_timer
 # Scoreboard value to keep track of defense schedules
 scoreboard objectives remove tbp_def_schdul
+# Scoreboard values to keep track of positions (for ranged turrets)
+scoreboard objectives remove tbp_ranged_x
+scoreboard objectives remove tbp_ranged_y
+scoreboard objectives remove tbp_ranged_z
+scoreboard objectives remove tbp_ranged_dx
+scoreboard objectives remove tbp_ranged_dy
+scoreboard objectives remove tbp_ranged_dz
 # Scoreboard value to keep track of dropped glowstone dust (nexus creation)
 scoreboard objectives remove tbp_glowdust_use
 # Scoreboard value to keep track of dropped name tags (nexus renaming)
