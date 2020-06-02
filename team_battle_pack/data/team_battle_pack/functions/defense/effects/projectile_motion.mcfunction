@@ -10,6 +10,7 @@ execute as @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1,
 
 ## Store dx, dy, and dz into the data of the projectile
 # If the projectile is an arrow
+data modify entity @s[type=minecraft:arrow] NoGravity set value 0
 execute store result entity @s[type=minecraft:arrow] Motion[0] double .5 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dx
 execute store result entity @s[type=minecraft:arrow] Motion[1] double .5 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dy
 execute store result entity @s[type=minecraft:arrow] Motion[2] double .5 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dz
