@@ -23,7 +23,7 @@ execute as @s[tag=ranged_turret,tag=upgraded] if entity @a[tag=enemy,distance=..
 
 
 ## SFX
-execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] run particle minecraft:smoke ~ ~1.65 ~ .5 .5 .5 .1 10 force
+execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] run particle minecraft:smoke ~ ~1.65 ~ .25 .25 .25 .01 10 force
 
 
 
