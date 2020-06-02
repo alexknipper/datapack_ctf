@@ -28,4 +28,4 @@ execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] run particle 
 
 
 ## Reset this turret's timer score
-scoreboard players reset @e[type=minecraft:armor_stand,tag=ranged_turret] tbp_def_timer
+scoreboard players reset @s tbp_def_timer
