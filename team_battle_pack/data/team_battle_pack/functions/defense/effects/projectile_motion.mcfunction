@@ -18,3 +18,8 @@ execute store result entity @s[type=minecraft:arrow] Motion[2] double .1 run sco
 execute store result entity @s[type=minecraft:fireball] direction[0] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dx
 execute store result entity @s[type=minecraft:fireball] direction[1] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dy
 execute store result entity @s[type=minecraft:fireball] direction[2] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dz
+
+
+
+## Un-tag the arrow
+tag @s remove ranged_projectile
