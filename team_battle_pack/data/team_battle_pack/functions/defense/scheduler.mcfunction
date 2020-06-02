@@ -45,5 +45,8 @@ execute as @e[type=minecraft:armor_stand,tag=effect_field] at @s run function te
 
 ## Turret Firing
 # Ranged
+execute as @e[type=minecraft:armor_stand,tag=ranged_turret] at @s if score @s tbp_def_timer >= ranged tbp_def_schdul run function team_battle_pack:defense/effects/ranged_turret
 # Melee
 # Status
+# Wipe out the 'enemy' tag on all players
+tag @a[tag=enemy] remove enemy
