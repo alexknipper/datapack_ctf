@@ -1,6 +1,11 @@
 ### Team battle Pack - Defense Scheduler
 ### This function serves to coordinate the execution of all defense-related functions
 
+# Wipe out the 'enemy' tag on all players
+tag @a[tag=enemy] remove enemy
+
+
+
 ## Increment the necessary timers
 # Timer to control ranged turrets
 scoreboard players add @e[type=minecraft:armor_stand,tag=ranged_turret] tbp_def_timer 1
@@ -50,5 +55,3 @@ execute as @e[type=minecraft:armor_stand,tag=ranged_turret] at @s run tp @s ~ ~ 
 execute as @e[type=minecraft:armor_stand,tag=ranged_turret] at @s if score @s tbp_def_timer >= ranged tbp_def_schdul run function team_battle_pack:defense/effects/ranged_turret
 # Melee
 # Status
-# Wipe out the 'enemy' tag on all players
-tag @a[tag=enemy] remove enemy
