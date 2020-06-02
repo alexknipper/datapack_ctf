@@ -19,6 +19,13 @@ execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] run s
 
 
 
+## Store the turret's current coordinates in a scoreboard
+execute as @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1.65,limit=1,sort=nearest] store result score @s tbp_ranged_x run data get @s Pos[0]
+execute as @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1.65,limit=1,sort=nearest] store result score @s tbp_ranged_y run data get @s Pos[1]
+execute as @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1.65,limit=1,sort=nearest] store result score @s tbp_ranged_z run data get @s Pos[2]
+
+
+
 ## Increment the Nexus' turret counter
 scoreboard players add @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1,sort=nearest] tbp_num_turret_r 1
 
