@@ -45,7 +45,7 @@ execute as @e[type=minecraft:armor_stand,tag=effect_field] at @s run function te
 
 ## Turret Firing
 # Ranged
-execute as @a[] unless score @s tbp_team = @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..25,limit=1] tbp_team unless score @s tbp_team matches 0 run tag @s add enemy
+execute as @a at @s unless score @s tbp_team = @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..25,limit=1] tbp_team unless score @s tbp_team matches 0 run tag @s add enemy
 execute as @e[type=minecraft:armor_stand,tag=ranged_turret] at @s run tp @s ~ ~ ~ facing entity @a[tag=enemy,distance=..25,limit=1,sort=nearest]
 execute as @e[type=minecraft:armor_stand,tag=ranged_turret] at @s if score @s tbp_def_timer >= ranged tbp_def_schdul run function team_battle_pack:defense/effects/ranged_turret
 # Melee
