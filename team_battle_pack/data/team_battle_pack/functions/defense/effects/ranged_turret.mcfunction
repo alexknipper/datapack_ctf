@@ -2,7 +2,7 @@
 ### This function fires the Ranged Turret whenever it is called as/at a ranged turret
 
 ## Tag all players that are not on the same team as the turret
-execute as @a[distance=..25] unless score @s tbp_team = @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1] tbp_team unless score @s tbp_team matches 0 run tag @s add enemy
+execute as @a[distance=..25] unless score @s tbp_team = @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_team unless score @s tbp_team matches 0 run tag @s add enemy
 
 
 
