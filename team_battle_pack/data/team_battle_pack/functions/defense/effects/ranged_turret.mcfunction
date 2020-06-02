@@ -24,3 +24,8 @@ execute as @s[tag=ranged_turret,tag=upgraded] if entity @a[tag=enemy,distance=..
 
 ## SFX
 execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] run particle minecraft:smoke ~ ~1.65 ~ .5 .5 .5 .1 10 force
+
+
+
+## Reset this turret's timer score
+scoreboard players reset @e[type=minecraft:armor_stand,tag=ranged_turret] tbp_def_timer
