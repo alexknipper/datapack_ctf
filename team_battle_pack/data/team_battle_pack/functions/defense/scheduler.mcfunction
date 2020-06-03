@@ -69,3 +69,22 @@ execute as @e[type=minecraft:armor_stand,tag=status_turret] at @s if score @s tb
 
 ## Wipe out the 'enemy' tag on all players
 tag @a[tag=enemy] remove enemy
+
+
+
+## Trigger Objectives
+# Count Offense Crafters
+scoreboard players enable @a tbp_atk_count
+execute as @a[scores={tbp_atk_count=1..}] at @s run function team_battle_pack:defense/triggers/offense_crafter
+# Count Defense Crafters
+scoreboard players enable @a tbp_def_count
+execute as @a[scores={tbp_def_count=1..}] at @s run function team_battle_pack:defense/triggers/defense_crafter
+# Count Ranged Turrets
+scoreboard players enable @a tbp_ranged_count
+execute as @a[scores={tbp_ranged_count=1..}] at @s run function team_battle_pack:defense/triggers/ranged_turret
+# Count Melee Turrets
+scoreboard players enable @a tbp_melee_count
+execute as @a[scores={tbp_melee_count=1..}] at @s run function team_battle_pack:defense/triggers/melee_turret
+# Count Status Turrets
+scoreboard players enable @a tbp_status_count
+execute as @a[scores={tbp_status_count=1..}] at @s run function team_battle_pack:defense/triggers/status_turret
