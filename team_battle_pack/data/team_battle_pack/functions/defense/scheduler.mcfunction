@@ -24,6 +24,14 @@ execute as @e[type=minecraft:armor_stand,tag=def_crafter] at @s run function tea
 
 
 
+## Block Destruction
+# Ranged Turrets
+execute as @e[type=minecraft:armor_stand,tag=ranged_turret] at @s run function team_battle_pack:defense/destruction/mark_ranged
+# Melee Turrets
+# Status Turrets
+
+
+
 ## Block Crafting
 # Effect Field
 execute as @a[scores={tbp_nstar_use=1..}] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..5,limit=1] tbp_team as @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:'{"text":"Effect Field Core","color":"aqua"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}},OnGround:1b},distance=..5,limit=1,sort=nearest] at @s unless entity @e[type=minecraft:armor_stand,tag=effect_field,distance=..2,limit=1] if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..3,limit=1] run function team_battle_pack:defense/use/effect_field
