@@ -12,4 +12,4 @@ execute at @s if block ~ ~2 ~ minecraft:smooth_stone_slab if score @s tbp_team =
 
 
 ## If the tag is still there, destroy the turret
-execute as @s[tag=destroy_r_turret] run function team_battle_pack:defense/destruction/destroy_ranged
+#execute as @s[tag=destroy_r_turret] run function team_battle_pack:defense/destruction/destroy_ranged
