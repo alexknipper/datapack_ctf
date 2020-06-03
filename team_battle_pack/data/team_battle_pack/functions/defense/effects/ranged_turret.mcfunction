@@ -14,11 +14,11 @@ execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] store result 
 execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] store result score @s tbp_ranged_dy run data get entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] Pos[1]
 execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] store result score @s tbp_ranged_dz run data get entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] Pos[2]
 # If the turret is not upgraded, spawn an arrow & give it the appropriate motion
-execute as @s[tag=ranged_turret,tag=!upgraded] if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] anchored eyes run summon minecraft:arrow ^ ^ ^1.65 {NoGravity:1b,Motion:[0.0,0.0,0.0],Tags:["ranged_projectile"]}
-execute as @s[tag=ranged_turret,tag=!upgraded] if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] as @e[type=minecraft:arrow,tag=ranged_projectile,distance=..4,limit=1,sort=nearest] run function team_battle_pack:defense/effects/projectile_motion
+execute as @s[tag=ranged_turret] if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] anchored eyes run summon minecraft:arrow ^ ^ ^1.65 {NoGravity:1b,Motion:[0.0,0.0,0.0],Tags:["ranged_projectile"]}
+execute as @s[tag=ranged_turret] if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] as @e[type=minecraft:arrow,tag=ranged_projectile,distance=..4,limit=1,sort=nearest] run function team_battle_pack:defense/effects/projectile_motion
 # If the turret is upgraded, spawn a fireball & give it the appropriate motion
-execute as @s[tag=ranged_turret,tag=upgraded] if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] anchored eyes run summon minecraft:fireball ^ ^ ^2 {ExplosionPower:0,direction:[0.0,0.0,0.0],Tags:["ranged_projectile"]}
-execute as @s[tag=ranged_turret,tag=upgraded] if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] as @e[type=minecraft:fireball,tag=ranged_projectile,distance=..5,limit=1,sort=nearest] run function team_battle_pack:defense/effects/projectile_motion
+#execute as @s[tag=ranged_turret,tag=upgraded] if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] anchored eyes run summon minecraft:fireball ^ ^ ^2 {ExplosionPower:0,direction:[0.0,0.0,0.0],Tags:["ranged_projectile"]}
+#execute as @s[tag=ranged_turret,tag=upgraded] if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] as @e[type=minecraft:fireball,tag=ranged_projectile,distance=..5,limit=1,sort=nearest] run function team_battle_pack:defense/effects/projectile_motion
 
 
 
