@@ -6,6 +6,12 @@
 
 
 
+## SFX
+execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] run particle minecraft:smoke ~ ~1.65 ~ .25 .25 .25 .01 10 force
+execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] run playsound minecraft:entity.arrow.shoot master @a[distance=..5] ~ ~ ~ 100 .75 1
+
+
+
 ## Pick the nearest target, and face towards them to fire
 # Face the target
 #tp @s ~ ~ ~ facing entity @a[tag=enemy,distance=..25,limit=1,sort=nearest]
@@ -19,11 +25,6 @@ execute as @s[tag=ranged_turret] if entity @a[tag=enemy,distance=..25,limit=1,so
 # If the turret is upgraded, spawn a fireball & give it the appropriate motion
 #execute as @s[tag=ranged_turret,tag=upgraded] if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] anchored eyes run summon minecraft:fireball ^ ^ ^2 {ExplosionPower:0,direction:[0.0,0.0,0.0],Tags:["ranged_projectile"]}
 #execute as @s[tag=ranged_turret,tag=upgraded] if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] as @e[type=minecraft:fireball,tag=ranged_projectile,distance=..5,limit=1,sort=nearest] run function team_battle_pack:defense/effects/projectile_motion
-
-
-
-## SFX
-execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] run particle minecraft:smoke ~ ~1.65 ~ .25 .25 .25 .01 10 force
 
 
 
