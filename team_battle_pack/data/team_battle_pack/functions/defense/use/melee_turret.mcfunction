@@ -5,7 +5,7 @@
 # Summon an item frame to center the armor stand
 summon minecraft:item_frame ~ ~ ~
 # Summon the earmor stand
-execute at @e[type=minecraft:item_frame,distance=..1,limit=1,sort=nearest] run summon armor_stand ~ ~-2 ~ {Invisible:1,NoGravity:1,Invulnerable:1b,ArmorItems:[{},{},{},{id:dispenser,Count:1b}],DisabledSlots:5039583,Tags:["melee_turret"]}
+execute at @e[type=minecraft:item_frame,distance=..1,limit=1,sort=nearest] run summon armor_stand ~ ~-2 ~ {Invisible:1,NoGravity:1,Invulnerable:1b,ArmorItems:[{},{},{},{id:stonecutter,Count:1b}],DisabledSlots:5039583,Tags:["melee_turret"]}
 # Kill the item frame
 kill @e[type=minecraft:item_frame,distance=..1,limit=1,sort=nearest]
 
