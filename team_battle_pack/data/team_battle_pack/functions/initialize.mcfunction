@@ -95,6 +95,20 @@ scoreboard objectives add tbp_item_count dummy
 
 
 
+## Add trigger objectives to check how many of each item a nexus has
+# Offense Crafters
+scoreboard objectives add tbp_offense_count trigger "Offense Crafter Count"
+# Defense Crafters
+scoreboard objectives add tbp_defense_count trigger "Defense Crafter Count"
+# Ranged Turrets
+scoreboard objectives add tbp_ranged_count trigger "Ranged Turret Count"
+# Melee Turrets
+scoreboard objectives add tbp_melee_count trigger "Melee Turret Count"
+# Status Turrets
+scoreboard objectives add tbp_status_count trigger "Status Turret Count"
+
+
+
 ## Create schedules for each timer
 # Activation interval for the special effects scheduler
 scoreboard players set sfx tbp_schedule 2

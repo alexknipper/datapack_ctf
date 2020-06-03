@@ -127,6 +127,20 @@ scoreboard objectives remove tbp_item_count
 
 
 
+## Remove trigger objectives to check how many of each item a nexus has
+# Offense Crafters
+scoreboard objectives remove tbp_offense_count
+# Defense Crafters
+scoreboard objectives remove tbp_defense_count
+# Ranged Turrets
+scoreboard objectives remove tbp_ranged_count
+# Melee Turrets
+scoreboard objectives remove tbp_melee_count
+# Status Turrets
+scoreboard objectives remove tbp_status_count
+
+
+
 ## Signal that the pack was uninstalled
 data remove storage team_battle_pack missing_core
 data remove storage team_battle_pack installed
