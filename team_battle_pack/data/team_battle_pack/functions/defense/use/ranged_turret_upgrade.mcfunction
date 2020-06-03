@@ -12,5 +12,10 @@ playsound minecraft:item.firecharge.use master @a[distance=..5] ~ ~ ~ 100 1.5 1
 
 
 
+## Reset all fire charge usage scores
+scoreboard players reset @a[distance=..25] tbp_fcharge_use
+
+
+
 ## Kill the item
 kill @s
