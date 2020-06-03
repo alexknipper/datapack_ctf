@@ -18,9 +18,9 @@ execute at @e[type=minecraft:armor_stand,tag=ranged_turret,tag=upgraded,distance
 ## Store dx, dy, and dz into the data of the projectile
 # If the projectile is an arrow
 data modify entity @s[type=minecraft:arrow] NoGravity set value 0
-execute store result entity @s[type=minecraft:arrow] Motion[0] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dx
-execute store result entity @s[type=minecraft:arrow] Motion[1] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dy
-execute store result entity @s[type=minecraft:arrow] Motion[2] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dz
+execute store result entity @s[type=minecraft:arrow] Motion[0] double .2 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dx
+execute store result entity @s[type=minecraft:arrow] Motion[1] double .2 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dy
+execute store result entity @s[type=minecraft:arrow] Motion[2] double .2 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dz
 # If the projectile is a fireball
 #execute store result entity @s[type=minecraft:fireball] direction[0] double .1 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dx
 #execute store result entity @s[type=minecraft:fireball,scores={dy=0..}] direction[1] double .05 run scoreboard players get @e[type=minecraft:armor_stand,tag=ranged_turret,distance=..1,limit=1] tbp_ranged_dy
