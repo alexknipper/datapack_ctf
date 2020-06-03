@@ -129,9 +129,9 @@ scoreboard objectives remove tbp_item_count
 
 ## Remove trigger objectives to check how many of each item a nexus has
 # Offense Crafters
-scoreboard objectives remove tbp_offense_count
+scoreboard objectives remove tbp_atk_count
 # Defense Crafters
-scoreboard objectives remove tbp_defense_count
+scoreboard objectives remove tbp_def_count
 # Ranged Turrets
 scoreboard objectives remove tbp_ranged_count
 # Melee Turrets

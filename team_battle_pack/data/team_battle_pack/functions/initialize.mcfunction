@@ -97,9 +97,9 @@ scoreboard objectives add tbp_item_count dummy
 
 ## Add trigger objectives to check how many of each item a nexus has
 # Offense Crafters
-scoreboard objectives add tbp_offense_count trigger "Offense Crafter Count"
+scoreboard objectives add tbp_atk_count trigger "Offense Crafter Count"
 # Defense Crafters
-scoreboard objectives add tbp_defense_count trigger "Defense Crafter Count"
+scoreboard objectives add tbp_def_count trigger "Defense Crafter Count"
 # Ranged Turrets
 scoreboard objectives add tbp_ranged_count trigger "Ranged Turret Count"
 # Melee Turrets
