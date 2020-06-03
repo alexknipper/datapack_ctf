@@ -28,7 +28,9 @@ execute as @e[type=minecraft:armor_stand,tag=def_crafter] at @s run function tea
 # Ranged Turrets
 execute as @e[type=minecraft:armor_stand,tag=ranged_turret] at @s run function team_battle_pack:defense/destruction/mark_ranged
 # Melee Turrets
+execute as @e[type=minecraft:armor_stand,tag=melee_turret] at @s run function team_battle_pack:defense/destruction/mark_melee
 # Status Turrets
+execute as @e[type=minecraft:armor_stand,tag=status_turret] at @s run function team_battle_pack:defense/destruction/mark_status
 
 
 
