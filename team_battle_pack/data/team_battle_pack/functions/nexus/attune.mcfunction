@@ -7,7 +7,7 @@ execute at @s as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] r
 
 
 ## SFX
-execute at @s run playsound minecraft:block.bell.resonate master @a[distance=..100] ~ ~ ~ 100 1.5 1
+execute at @s run playsound minecraft:block.bell.resonate block @a[distance=..100] ~ ~ ~ 100 1.5 1
 
 
 

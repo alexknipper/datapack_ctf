@@ -12,7 +12,7 @@ execute at @s as @e[type=minecraft:armor_stand,distance=..100] if score @s tbp_t
 
 
 ## SFX
-execute at @s run playsound minecraft:block.beacon.power_select master @a[distance=..100] ~ ~ ~ 100 1.75 1
+execute at @s run playsound minecraft:block.beacon.power_select block @a[distance=..100] ~ ~ ~ 100 1.75 1
 
 
 

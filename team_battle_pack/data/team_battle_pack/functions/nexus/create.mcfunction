@@ -15,7 +15,7 @@ execute at @s at @e[type=minecraft:armor_stand,distance=..2.5,tag=capture_indica
 
 ## SFX
 execute at @s at @e[type=minecraft:end_crystal,distance=..2,tag=nexus,limit=1,sort=nearest] run summon minecraft:area_effect_cloud ~ ~.25 ~ {Particle:"cloud",ReapplicaitonDelay:20,Radius:2f,RadiusPerTick:-0.002f,RadiusOnUse:0.5f,Duration:50,DurationOnUse:0.0f}
-execute at @s run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 100 1.5 1
+execute at @s run playsound minecraft:block.end_portal.spawn block @a ~ ~ ~ 100 1.5 1
 
 ## Grant advancements to the player
 execute at @s run advancement grant @a[distance=..5] only team_battle_pack:nexus
