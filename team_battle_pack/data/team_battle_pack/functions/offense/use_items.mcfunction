@@ -26,7 +26,7 @@ execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:firework_star",tag:{d
 
 
 ## SFX
-playsound minecraft:item.trident.return master @a[distance=..7.5] ~ ~ ~ 100 .35 1
+playsound minecraft:item.trident.return block @a[distance=..7.5] ~ ~ ~ 100 .35 1
 
 
 
