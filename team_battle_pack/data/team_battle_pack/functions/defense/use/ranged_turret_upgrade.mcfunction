@@ -8,7 +8,7 @@ execute as @e[type=minecraft:armor_stand,tag=ranged_turret,tag=!upgraded,distanc
 
 ## SFX
 particle minecraft:flame ~ ~1.65 ~ .35 .35 .35 .01 25 force
-playsound minecraft:item.firecharge.use master @a[distance=..5] ~ ~ ~ 100 1.5 1
+playsound minecraft:item.firecharge.use block @a[distance=..5] ~ ~ ~ 100 1.5 1
 
 
 

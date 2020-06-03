@@ -3,7 +3,7 @@
 
 ## SFX
 execute if entity @a[tag=enemy,distance=..12.5,limit=1,sort=nearest] run particle minecraft:instant_effect ~ ~1.65 ~ .5 .25 .5 .01 25 force
-execute if entity @a[tag=enemy,distance=..12.5,limit=1,sort=nearest] run playsound minecraft:entity.evoker.cast_spell block @a[distance=..12.5] ~ ~ ~ 100 1.5 1
+execute if entity @a[tag=enemy,distance=..12.5,limit=1,sort=nearest] run playsound minecraft:entity.evoker.cast_spell block @a[distance=..12.5] ~ ~ ~ 75 1.5 1
 
 
 

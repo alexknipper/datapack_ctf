@@ -11,7 +11,7 @@ execute at @e[type=minecraft:item_frame,distance=..1.25,limit=1,sort=nearest] ru
 kill @e[type=minecraft:item_frame,distance=..1.25,limit=1,sort=nearest]
 
 ## SFX
-playsound minecraft:block.anvil.place master @a[distance=..50] ~ ~ ~ 100 .65 1
+playsound minecraft:block.anvil.place block @a[distance=..50] ~ ~ ~ 100 .65 1
 
 ## Grant advancements to the player
 advancement grant @a[distance=..5] only team_battle_pack:defense

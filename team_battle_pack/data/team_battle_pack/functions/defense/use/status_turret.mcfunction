@@ -31,7 +31,7 @@ scoreboard players add @e[type=minecraft:end_crystal,tag=nexus,distance=..100,li
 
 
 ## SFX
-playsound minecraft:item.shield.break master @a[distance=..10] ~ ~ ~ 100 .5 1
+playsound minecraft:item.shield.break block @a[distance=..10] ~ ~ ~ 100 .5 1
 
 
 

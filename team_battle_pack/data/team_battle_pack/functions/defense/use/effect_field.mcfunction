@@ -15,7 +15,7 @@ execute as @e[type=minecraft:end_crystal,tag=nexus,distance=..1,limit=1] at @s r
 
 
 ## SFX
-playsound minecraft:block.conduit.activate master @a[distance=..100] ~ ~ ~ 100 .75 1
+playsound minecraft:block.conduit.activate block @a[distance=..100] ~ ~ ~ 100 .75 1
 
 
 
