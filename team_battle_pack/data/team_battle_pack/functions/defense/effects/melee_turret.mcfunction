@@ -9,10 +9,10 @@ execute if entity @a[tag=enemy,distance=..7.5,limit=1,sort=nearest] run playsoun
 
 ## Summon Evoker Fangs at all targets
 execute at @a[tag=enemy,distance=..7.5] run summon minecraft:evoker_fangs ~ ~ ~
-execute at @a[tag=enemy,distance=..7.5] run summon minecraft:evoker_fangs ~1 ~ ~
-execute at @a[tag=enemy,distance=..7.5] run summon minecraft:evoker_fangs ~ ~ ~1
-execute at @a[tag=enemy,distance=..7.5] run summon minecraft:evoker_fangs ~-1 ~ ~
-execute at @a[tag=enemy,distance=..7.5] run summon minecraft:evoker_fangs ~ ~ ~-1
+execute at @a[tag=enemy,distance=..7.5] run summon minecraft:evoker_fangs ~.75 ~ ~
+execute at @a[tag=enemy,distance=..7.5] run summon minecraft:evoker_fangs ~ ~ ~.75
+execute at @a[tag=enemy,distance=..7.5] run summon minecraft:evoker_fangs ~-.75 ~ ~
+execute at @a[tag=enemy,distance=..7.5] run summon minecraft:evoker_fangs ~ ~ ~-.75
 
 
 
