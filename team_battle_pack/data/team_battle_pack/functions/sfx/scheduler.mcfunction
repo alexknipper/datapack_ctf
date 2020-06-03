@@ -75,3 +75,15 @@ execute at @e[scores={tbp_color=16},tag=!nexus] run particle minecraft:dust .35 
 
 ## Core Holder SFX
 execute at @a[tag=core_holder] run particle minecraft:witch ~ ~2.25 ~ .05 .15 .05 .01 3 force
+
+
+
+## Status Turret SFX
+# Poison Turret
+execute at @e[type=minecraft:armor_stand,tag=status_turret,tag=poison] run particle minecraft:dragon_breath ~ ~1.65 ~ .01 .01 .01 .01 1 force
+# Nausea Turret
+execute at @e[type=minecraft:armor_stand,tag=status_turret,tag=nausea] run particle minecraft:falling_dust minecraft:green_terracotta ~ ~1.75 ~ .05 .05 .05 .01 1 force
+# Wither Turret
+execute at @e[type=minecraft:armor_stand,tag=status_turret,tag=wither] run particle minecraft:smoke ~ ~1.65 ~ .025 .01 .025 .01 1 force
+# Slowness Turret
+execute at @e[type=minecraft:armor_stand,tag=status_turret,tag=slowness] run particle minecraft:falling_dust minecraft:blue_terracotta ~ ~1.75 ~ .05 .05 .05 .01 1 force
