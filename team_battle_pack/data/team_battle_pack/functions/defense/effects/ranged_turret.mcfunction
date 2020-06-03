@@ -8,7 +8,7 @@
 
 ## SFX
 execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] run particle minecraft:smoke ~ ~1.65 ~ .25 .25 .25 .01 10 force
-execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] run playsound minecraft:entity.arrow.shoot block @a[distance=..15] ~ ~ ~ 75 .75 1
+execute if entity @a[tag=enemy,distance=..25,limit=1,sort=nearest] run playsound minecraft:entity.arrow.shoot block @a[distance=..15] ~ ~ ~ 50 .75 1
 
 
 
