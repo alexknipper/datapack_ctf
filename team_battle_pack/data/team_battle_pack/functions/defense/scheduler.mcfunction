@@ -44,7 +44,7 @@ execute as @a[scores={tbp_fcharge_use=1..}] at @s if score @s tbp_team = @e[type
 # Melee Turrets
 execute as @a[scores={tbp_iringot_use=1..}] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_team if score @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_num_turret_m < limit tbp_num_turret_m as @e[type=minecraft:item,nbt={Item:{id:"minecraft:iron_ingot",tag:{display:{Name:'{"text":"Melee Turret Kit","color":"red"}'},HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}},OnGround:1b},distance=..5,limit=1,sort=nearest] at @s unless entity @e[type=minecraft:armor_stand,tag=melee_turret,distance=..22.5] if block ~ ~-.15 ~ minecraft:smooth_stone_slab if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..98,limit=1] run function team_battle_pack:defense/use/melee_turret
 # Status Turrets
-execute as @a[scores={tbp_blazrod_use=1..}] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_team if score @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_num_turret_s < limit tbp_num_turret_s as @e[type=minecraft:item,nbt={Item:{id:"minecraft:blaze_rod",tag:{HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}},OnGround:1b},distance=..5,limit=1,sort=nearest] at @s unless entity @e[type=minecraft:armor_stand,tag=status_turret,distance=..35] if block ~ ~-.15 ~ minecraft:smooth_stone_slab if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..98,limit=1] run function team_battle_pack:defense/use/status_turret
+execute as @a[scores={tbp_blazrod_use=1..}] at @s if score @s tbp_team = @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_team if score @e[type=minecraft:end_crystal,tag=nexus,distance=..100,limit=1] tbp_num_turret_s < limit tbp_num_turret_s as @e[type=minecraft:item,nbt={Item:{id:"minecraft:blaze_rod",tag:{HideFlags:39,Enchantments:[{id:"minecraft:infinity",lvl:1}]}},OnGround:1b},distance=..5,limit=1,sort=nearest] at @s unless entity @e[type=minecraft:armor_stand,tag=status_turret,distance=..15] if block ~ ~-.15 ~ minecraft:smooth_stone_slab if entity @e[type=minecraft:end_crystal,tag=nexus,distance=..98,limit=1] run function team_battle_pack:defense/use/status_turret
 
 
 
@@ -62,7 +62,7 @@ execute as @e[type=minecraft:armor_stand,tag=ranged_turret] at @s if score @s tb
 execute as @a at @s unless score @s tbp_team = @e[type=minecraft:armor_stand,tag=melee_turret,distance=..7.5,limit=1,sort=nearest] tbp_team unless score @s tbp_team matches 0 run tag @s add enemy
 execute as @e[type=minecraft:armor_stand,tag=melee_turret] at @s if score @s tbp_def_timer >= melee tbp_def_schdul run function team_battle_pack:defense/effects/melee_turret
 # Status
-execute as @a at @s unless score @s tbp_team = @e[type=minecraft:armor_stand,tag=status_turret,distance=..12.5,limit=1,sort=nearest] tbp_team unless score @s tbp_team matches 0 run tag @s add enemy
+execute as @a at @s unless score @s tbp_team = @e[type=minecraft:armor_stand,tag=status_turret,distance=..7.5,limit=1,sort=nearest] tbp_team unless score @s tbp_team matches 0 run tag @s add enemy
 execute as @e[type=minecraft:armor_stand,tag=status_turret] at @s if score @s tbp_def_timer >= status tbp_def_schdul run function team_battle_pack:defense/effects/status_turret
 
 
